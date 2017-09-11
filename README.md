@@ -4,11 +4,11 @@ Este repositório contém as informações referentes ao projeto de levantamento
 
 ### Visualização
 
-Esta documentação é melhor visualizada na página referente no Github Pages, com uma interface amigável e os documentos contidos na pasta *docs* são apenas para utilização da página. Que pode ser encontrada [[aqui]]
+Esta documentação é melhor visualizada na página referente no Github Pages, com uma interface amigável e os documentos contidos na pasta *docs* são apenas para utilização da página. Que pode ser encontrada [aqui](https://github.com/github-requirements/docs/)
 
 ### Suporte e Contato
 
-Caso tenha algum problema ou precise utilizar qualquer ferramenta utilize os emails encontrados na página principal da wiki ou diretamente com qualquer membro da equipe. Todas as informações possuem suas [[referências bibliográficas]] e o projeto encontra-se [[completamente aberto]] para consulta.
+Caso tenha algum problema ou precise utilizar qualquer ferramenta utilize os emails encontrados na página principal da wiki ou diretamente com qualquer membro da equipe. Todas as informações possuem suas [referências bibliográficas](https://github.com/github-requirements/docs/) e o projeto encontra-se [completamente aberto](https://github.com/github-requirements/docs/) para consulta.
 
 ### English Version (WIP)
 
