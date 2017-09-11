@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## Github: Requisitos de Software 2/2017
 
-You can use the [editor on GitHub](https://github.com/github-requirements/docs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Este repositório contém as informações referentes ao projeto de levantamento e análise dos requisitos de software do Github. Este é artefato da disciplina de Requisitos de Software do curso de Engenharia de Software da Universidade de Brasília. A disciplina é ministrada durante o segundo semestre de 2017. Todas as informações para compreensão do projeto encontram-se na [wiki](https://github.com/github-requirements/docs/wiki) deste mesmo repositório
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Visualização
 
-### Markdown
+Esta documentação é melhor visualizada na página referente no Github Pages, com uma interface amigável e os documentos contidos na pasta *docs* são apenas para utilização da página. Que pode ser encontrada [[aqui]]
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Suporte e Contato
 
-```markdown
-Syntax highlighted code block
+Caso tenha algum problema ou precise utilizar qualquer ferramenta utilize os emails encontrados na página principal da wiki ou diretamente com qualquer membro da equipe. Todas as informações possuem suas [[referências bibliográficas]] e o projeto encontra-se [[completamente aberto]] para consulta.
 
-# Header 1
-## Header 2
-### Header 3
+### English Version (WIP)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/github-requirements/docs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Actually, this documentation is in brazilian portuguese, but soon, there will be an english version. 
