@@ -19,7 +19,7 @@ id: home
     <div class="marketing-col">
       <h3>Learn Once, Write Anywhere</h3>
       <p>We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.</p>
-      <p>React can also render on the server using Node and power mobile apps using <a href="https://facebook.github.io/react-native/">React Native</a>.</p>
+      <p>React can also render on the server using Node and power mobile apps using <a href="https://github-requirements.github.io/react-native/">React Native</a>.</p>
     </div>
   </div>
 </section>

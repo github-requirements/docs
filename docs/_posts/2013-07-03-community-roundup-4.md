@@ -18,11 +18,11 @@ React reconciliation process appears to be very well suited to implement a text 
 The best part is the demo of how React reconciliation process makes live editing more user-friendly.
 
 > Our renderer, post-React, is on the left. A typical math editor's preview is on the right.
-> <figure>[<img src="/react/img/blog/monkeys.gif" width="70%" />](http://bjk5.com/post/53742233351/getting-your-team-to-adopt-new-technology)</figure>
+> <figure>[<img src="/docs/img/blog/monkeys.gif" width="70%" />](http://bjk5.com/post/53742233351/getting-your-team-to-adopt-new-technology)</figure>
 
 ## React Snippets
 
-Over the past several weeks, members of our team, [Pete Hunt](http://www.petehunt.net/) and [Paul O'Shannessy](http://zpao.com/), answered many questions that were asked in the [React group](https://groups.google.com/forum/#!forum/reactjs). They give a good overview of how to integrate React with other libraries and APIs through the use of [Mixins](/react/docs/reusable-components.html) and [Lifecycle Methods](/react/docs/working-with-the-browser.html).
+Over the past several weeks, members of our team, [Pete Hunt](http://www.petehunt.net/) and [Paul O'Shannessy](http://zpao.com/), answered many questions that were asked in the [React group](https://groups.google.com/forum/#!forum/reactjs). They give a good overview of how to integrate React with other libraries and APIs through the use of [Mixins](/docs/docs/reusable-components.html) and [Lifecycle Methods](/docs/docs/working-with-the-browser.html).
 
 > [Listening Scroll Event](https://groups.google.com/forum/#!topic/reactjs/l6PnP8qbofk)
 >
@@ -54,4 +54,4 @@ Over the past several weeks, members of our team, [Pete Hunt](http://www.petehun
 [Tom Occhino](http://tomocchino.com/) implemented Snake in 150 lines with React.
 
 > [Check the source on GitHub](https://github.com/tomocchino/react-snake/blob/master/src/snake.js)
-> <figure>[![](/react/img/blog/snake.png)](https://tomocchino.github.io/react-snake/)</figure>
+> <figure>[![](/docs/img/blog/snake.png)](https://tomocchino.github.io/react-snake/)</figure>

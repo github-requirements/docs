@@ -65,7 +65,7 @@ We hope that you find this list helpful. Please let us know if we missed importa
 
 ### Performance Optimizations
 
-One of the most commonly used mixins is [`PureRenderMixin`](/react/docs/pure-render-mixin.html). You might be using it in some components to [prevent unnecessary re-renders](/react/docs/advanced-performance.html#shouldcomponentupdate-in-action) when the props and state are shallowly equal to the previous props and state:
+One of the most commonly used mixins is [`PureRenderMixin`](/docs/docs/pure-render-mixin.html). You might be using it in some components to [prevent unnecessary re-renders](/docs/docs/advanced-performance.html#shouldcomponentupdate-in-action) when the props and state are shallowly equal to the previous props and state:
 
 ```javascript
 var PureRenderMixin = require('react-addons-pure-render-mixin');
@@ -80,7 +80,7 @@ var Button = React.createClass({
 
 #### Solution
 
-To express the same without mixins, you can use the [`shallowCompare`](/react/docs/shallow-compare.html) function directly instead:
+To express the same without mixins, you can use the [`shallowCompare`](/docs/docs/shallow-compare.html) function directly instead:
 
 ```js
 var shallowCompare = require('react-addons-shallow-compare');
@@ -97,7 +97,7 @@ var Button = React.createClass({
 
 If you use a custom mixin implementing a `shouldComponentUpdate` function with different algorithm, we suggest exporting just that single function from a module and calling it directly from your components.
 
-We understand that more typing can be annoying. For the most common case, we plan to [introduce a new base class](https://github.com/facebook/react/pull/7195) called `React.PureComponent` in the next minor release. It uses the same shallow comparison as `PureRenderMixin` does today.
+We understand that more typing can be annoying. For the most common case, we plan to [introduce a new base class](https://github.com/facebook/docs/pull/7195) called `React.PureComponent` in the next minor release. It uses the same shallow comparison as `PureRenderMixin` does today.
 
 ### Subscriptions and Side Effects
 
@@ -393,7 +393,7 @@ module.exports = withSubscription(CommentList);
 
 Higher-order components are a powerful pattern. You can pass additional arguments to them if you want to further customize their behavior. After all, they are not even a feature of React. They are just functions that receive components and return components that wrap them.
 
-Like any solution, higher-order components have their own pitfalls. For example, if you heavily use [refs](/react/docs/more-about-refs.html), you might notice that wrapping something into a higher-order component changes the ref to point to the wrapping component. In practice we discourage using refs for component communication so we don’t think it’s a big issue. In the future, we might consider adding [ref forwarding](https://github.com/facebook/react/issues/4213) to React to solve this annoyance.
+Like any solution, higher-order components have their own pitfalls. For example, if you heavily use [refs](/docs/docs/more-about-refs.html), you might notice that wrapping something into a higher-order component changes the ref to point to the wrapping component. In practice we discourage using refs for component communication so we don’t think it’s a big issue. In the future, we might consider adding [ref forwarding](https://github.com/facebook/docs/issues/4213) to React to solve this annoyance.
 
 ### Rendering Logic
 
@@ -471,7 +471,7 @@ Props keep component dependencies explicit, easy to replace, and enforceable wit
 
 ### Context
 
-Another group of mixins we discovered were helpers for providing and consuming [React context](/react/docs/context.html). Context is an experimental unstable feature, has [certain issues](https://github.com/facebook/react/issues/2517), and will likely change its API in the future. We don’t recommend using it unless you’re confident there is no other way of solving your problem.
+Another group of mixins we discovered were helpers for providing and consuming [React context](/docs/docs/context.html). Context is an experimental unstable feature, has [certain issues](https://github.com/facebook/docs/issues/2517), and will likely change its API in the future. We don’t recommend using it unless you’re confident there is no other way of solving your problem.
 
 Nevertheless, if you already use context today, you might have been hiding its usage with mixins like this:
 
@@ -605,9 +605,9 @@ var Button = React.createClass({
 
 ### Other Use Cases
 
-Sometimes people use mixins to selectively add logging to lifecycle hooks in some components. In the future, we intend to provide an [official DevTools API](https://github.com/facebook/react/issues/5306) that would let you implement something similar without touching the components. However it’s still very much a work in progress. If you heavily depend on logging mixins for debugging, you might want to keep using those mixins for a little longer.
+Sometimes people use mixins to selectively add logging to lifecycle hooks in some components. In the future, we intend to provide an [official DevTools API](https://github.com/facebook/docs/issues/5306) that would let you implement something similar without touching the components. However it’s still very much a work in progress. If you heavily depend on logging mixins for debugging, you might want to keep using those mixins for a little longer.
 
-If you can’t accomplish something with a component, a higher-order component, or a utility module, it could be mean that React should provide this out of the box. [File an issue](https://github.com/facebook/react/issues/new) to tell us about your use case for mixins, and we’ll help you consider alternatives or perhaps implement your feature request.
+If you can’t accomplish something with a component, a higher-order component, or a utility module, it could be mean that React should provide this out of the box. [File an issue](https://github.com/facebook/docs/issues/new) to tell us about your use case for mixins, and we’ll help you consider alternatives or perhaps implement your feature request.
 
 Mixins are not deprecated in the traditional sense. You can keep using them with `React.createClass()`, as we won’t be changing it further. Eventually, as ES6 classes gain more adoption and their usability problems in React are solved, we might split `React.createClass()` into a separate package because most people wouldn’t need it. Even in that case, your old mixins would keep working.
 

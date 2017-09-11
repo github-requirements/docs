@@ -27,22 +27,22 @@ create-react-app hello-world
 
 This will take a while as npm installs the transitive dependencies, but once it’s done, you will see a list of commands you can run in the created folder:
 
-![created folder](/react/img/blog/create-apps-with-no-configuration/created-folder.png)
+![created folder](/docs/img/blog/create-apps-with-no-configuration/created-folder.png)
 
 ### Starting the Server
 
 Run `npm start` to launch the development server. The browser will open automatically with the created app’s URL.
 
-![compiled successfully](/react/img/blog/create-apps-with-no-configuration/compiled-successfully.png)
+![compiled successfully](/docs/img/blog/create-apps-with-no-configuration/compiled-successfully.png)
 
 Create React App uses both webpack and Babel under the hood.
 The console output is tuned to be minimal to help you focus on the problems:
 
-![failed to compile](/react/img/blog/create-apps-with-no-configuration/failed-to-compile.png)
+![failed to compile](/docs/img/blog/create-apps-with-no-configuration/failed-to-compile.png)
 
 ESLint is also integrated so lint warnings are displayed right in the console:
 
-![compiled with warnings](/react/img/blog/create-apps-with-no-configuration/compiled-with-warnings.png)
+![compiled with warnings](/docs/img/blog/create-apps-with-no-configuration/compiled-with-warnings.png)
 
 We only picked a small subset of lint rules that often lead to bugs.
 
@@ -50,7 +50,7 @@ We only picked a small subset of lint rules that often lead to bugs.
 
 To build an optimized bundle, run `npm run build`:
 
-![npm run build](/react/img/blog/create-apps-with-no-configuration/npm-run-build.png)
+![npm run build](/docs/img/blog/create-apps-with-no-configuration/npm-run-build.png)
 
 It is minified, correctly envified, and the assets include content hashes for caching.
 
@@ -117,7 +117,7 @@ We welcome you to participate in this experiment. Help us build the React toolin
 
 ## The Backstory
 
-React was one of the first libraries to embrace transpiling JavaScript. As a result, even though you can [learn React without any tooling](https://github.com/facebook/react/blob/3fd582643ef3d222a00a0c756292c15b88f9f83c/examples/basic-jsx/index.html), the React ecosystem has commonly become associated with an overwhelming explosion of tools.
+React was one of the first libraries to embrace transpiling JavaScript. As a result, even though you can [learn React without any tooling](https://github.com/facebook/docs/blob/3fd582643ef3d222a00a0c756292c15b88f9f83c/examples/basic-jsx/index.html), the React ecosystem has commonly become associated with an overwhelming explosion of tools.
 
 Eric Clemmons called this phenomenon the “[JavaScript Fatigue](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4)”:
 
@@ -140,7 +140,7 @@ Still, we knew it was frustrating to spend days setting up a project when all yo
 
 We found ourselves in an unusual dilemma.
 
-So far, [our strategy](/react/contributing/design-principles.html#dogfooding) has been to only release the code that we are using at Facebook. This helped us ensure that every project is battle-tested and has clearly defined scope and priorities.
+So far, [our strategy](/docs/contributing/design-principles.html#dogfooding) has been to only release the code that we are using at Facebook. This helped us ensure that every project is battle-tested and has clearly defined scope and priorities.
 
 However, tooling at Facebook is different than at many smaller companies. Linting, transpilation, and packaging are all handled by powerful remote development servers, and product engineers don’t need to configure them. While we wish we could give a dedicated server to every user of React, even Facebook cannot scale that well!
 

@@ -15,7 +15,7 @@ redirect_from:
   - "tips/use-react-with-other-libraries.html"
 ---
 
-[Components](/react/docs/components-and-props.html) let you split the UI into independent, reusable pieces, and think about each piece in isolation. `React.Component` is provided by [`React`](/react/docs/react-api.html).
+[Components](/docs/docs/components-and-props.html) let you split the UI into independent, reusable pieces, and think about each piece in isolation. `React.Component` is provided by [`React`](/docs/docs/react-api.html).
 
 ## Overview
 
@@ -31,7 +31,7 @@ class Greeting extends React.Component {
 }
 ```
 
-If you don't use ES6 yet, you may use the [`create-react-class`](/react/docs/react-api.html#createclass) module instead. Take a look at [Using React without ES6](/react/docs/react-without-es6.html) to learn more.
+If you don't use ES6 yet, you may use the [`create-react-class`](/docs/docs/react-api.html#createclass) module instead. Take a look at [Using React without ES6](/docs/docs/react-without-es6.html) to learn more.
 
 ### The Component Lifecycle
 
@@ -124,7 +124,7 @@ constructor(props) {
 }
 ```
 
-Beware of this pattern, as state won't be up-to-date with any props update. Instead of syncing props to state, you often want to [lift the state up](/react/docs/lifting-state-up.html).
+Beware of this pattern, as state won't be up-to-date with any props update. Instead of syncing props to state, you often want to [lift the state up](/docs/docs/lifting-state-up.html).
 
 If you "fork" props by using them for state, you might also want to implement [`componentWillReceiveProps(nextProps)`](#componentwillreceiveprops) to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
 
@@ -180,7 +180,7 @@ Returning `false` does not prevent child components from re-rendering when *thei
 
 Currently, if `shouldComponentUpdate()` returns `false`, then [`componentWillUpdate()`](#componentwillupdate), [`render()`](#render), and [`componentDidUpdate()`](#componentdidupdate) will not be invoked. Note that in the future React may treat `shouldComponentUpdate()` as a hint rather than a strict directive, and returning `false` may still result in a re-rendering of the component.
 
-If you determine a specific component is slow after profiling, you may change it to inherit from [`React.PureComponent`](/react/docs/react-api.html#react.purecomponent) which implements `shouldComponentUpdate()` with a shallow prop and state comparison. If you are confident you want to write it by hand, you may compare `this.props` with `nextProps` and `this.state` with `nextState` and return `false` to tell React the update can be skipped.
+If you determine a specific component is slow after profiling, you may change it to inherit from [`React.PureComponent`](/docs/docs/react-api.html#react.purecomponent) which implements `shouldComponentUpdate()` with a shallow prop and state comparison. If you are confident you want to write it by hand, you may compare `this.props` with `nextProps` and `this.state` with `nextState` and return `false` to tell React the update can be skipped.
 
 * * *
 
@@ -289,7 +289,7 @@ this.setState((prevState) => {
 });
 ```
 
-For more detail, see the [State and Lifecycle guide](/react/docs/state-and-lifecycle.html).
+For more detail, see the [State and Lifecycle guide](/docs/docs/state-and-lifecycle.html).
 
 * * *
 
@@ -343,7 +343,7 @@ If `props.color` is set to null, it will remain null:
 
 ### `displayName`
 
-The `displayName` string is used in debugging messages. Usually, you don't need to set it explicitly because it's inferred from the name of the function or class that defines the component. You might want to set it explicitly if you want to display a different name for debugging purposes or when you create a higher-order component, see [Wrap the Display Name for Easy Debugging](/react/docs/higher-order-components.html#convention-wrap-the-display-name-for-easy-debugging) for details.
+The `displayName` string is used in debugging messages. Usually, you don't need to set it explicitly because it's inferred from the name of the function or class that defines the component. You might want to set it explicitly if you want to display a different name for debugging purposes or when you create a higher-order component, see [Wrap the Display Name for Easy Debugging](/docs/docs/higher-order-components.html#convention-wrap-the-display-name-for-easy-debugging) for details.
 
 * * *
 
@@ -351,7 +351,7 @@ The `displayName` string is used in debugging messages. Usually, you don't need 
 
 ### `props`
 
-`this.props` contains the props that were defined by the caller of this component. See [Components and Props](/react/docs/components-and-props.html) for an introduction to props.
+`this.props` contains the props that were defined by the caller of this component. See [Components and Props](/docs/docs/components-and-props.html) for an introduction to props.
 
 In particular, `this.props.children` is a special prop, typically defined by the child tags in the JSX expression rather than in the tag itself.
 
@@ -361,6 +361,6 @@ The state contains data specific to this component that may change over time. Th
 
 If you don't use it in `render()`, it shouldn't be in the state. For example, you can put timer IDs directly on the instance.
 
-See [State and Lifecycle](/react/docs/state-and-lifecycle.html) for more information about the state.
+See [State and Lifecycle](/docs/docs/state-and-lifecycle.html) for more information about the state.
 
 Never mutate `this.state` directly, as calling `setState()` afterwards may replace the mutation you made. Treat `this.state` as if it were immutable.

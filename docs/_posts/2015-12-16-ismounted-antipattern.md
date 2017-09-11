@@ -54,7 +54,7 @@ cancelablePromise
 cancelablePromise.cancel(); // Cancel the promise
 ```
 
-Where `makeCancelable` was originally [defined by @istarkov](https://github.com/facebook/react/issues/5465#issuecomment-157888325) as:
+Where `makeCancelable` was originally [defined by @istarkov](https://github.com/facebook/docs/issues/5465#issuecomment-157888325) as:
 
 ```js
 const makeCancelable = (promise) => {

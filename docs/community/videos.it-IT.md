@@ -16,8 +16,8 @@ next: complementary-tools-it-IT.html
 
 ### Pensare in react - tagtree.tv
 
-Un video di [tagtree.tv](http://tagtree.tv/) che espone i principi di [Pensare in React](/react/docs/thinking-in-react.html) mentre costruisci una semplice applicazione
-<figure>[![](/react/img/docs/thinking-in-react-tagtree.png)](http://tagtree.tv/thinking-in-react)</figure>
+Un video di [tagtree.tv](http://tagtree.tv/) che espone i principi di [Pensare in React](/docs/docs/thinking-in-react.html) mentre costruisci una semplice applicazione
+<figure>[![](/docs/img/docs/thinking-in-react-tagtree.png)](http://tagtree.tv/thinking-in-react)</figure>
 
 * * *
 
@@ -39,7 +39,7 @@ Un video di [tagtree.tv](http://tagtree.tv/) che espone i principi di [Pensare i
 ### CodeWinds
 
 [Pete Hunt](http://www.petehunt.net/) ha parlato con [Jeff Barczewski](http://jeff.barczewski.com/) a proposito di React nell'Episodio 4 di CodeWinds.
-<figure>[![](/react/img/docs/codewinds-004.png)](http://codewinds.com/4)</figure>
+<figure>[![](/docs/img/docs/codewinds-004.png)](http://codewinds.com/4)</figure>
 
 <table width="100%"><tr><td>
 02:08 - Cos'è React e perché usarlo?<br />
@@ -72,7 +72,7 @@ Un video di [tagtree.tv](http://tagtree.tv/) che espone i principi di [Pensare i
 ### JavaScript Jabber
 
 [Pete Hunt](http://www.petehunt.net/) e [Jordan Walke](https://github.com/jordwalke) hanno parlato di React in JavaScript Jabber 73.
-<figure>[![](/react/img/docs/javascript-jabber.png)](http://javascriptjabber.com/073-jsj-react-with-pete-hunt-and-jordan-walke/#content)</figure>
+<figure>[![](/docs/img/docs/javascript-jabber.png)](http://javascriptjabber.com/073-jsj-react-with-pete-hunt-and-jordan-walke/#content)</figure>
 
 <table width="100%"><tr><td>
 01:34 – Introduzione di Pete Hunt<br />

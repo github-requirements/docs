@@ -38,7 +38,7 @@ ReactDOM.render(
 )
 ```
 
-Render a React element into the DOM in the supplied `container` and return a [reference](/react/docs/more-about-refs.html) to the component (or returns `null` for [stateless components](/react/docs/components-and-props.html#functional-and-class-components)).
+Render a React element into the DOM in the supplied `container` and return a [reference](/docs/docs/more-about-refs.html) to the component (or returns `null` for [stateless components](/docs/docs/components-and-props.html#functional-and-class-components)).
 
 If the React element was previously rendered into `container`, this will perform an update on it and only mutate the DOM as necessary to reflect the latest React element.
 
@@ -52,7 +52,7 @@ If the optional callback is provided, it will be executed after the component is
 >
 > `ReactDOM.render()` currently returns a reference to the root `ReactComponent` instance. However, using this return value is legacy
 > and should be avoided because future versions of React may render components asynchronously in some cases. If you need a reference to the root `ReactComponent` instance, the preferred solution is to attach a
-> [callback ref](/react/docs/more-about-refs.html#the-ref-callback-attribute) to the root element.
+> [callback ref](/docs/docs/more-about-refs.html#the-ref-callback-attribute) to the root element.
 
 * * *
 

@@ -90,7 +90,7 @@ Style keys are camelCased in order to be consistent with accessing the propertie
 
 ### suppressContentEditableWarning
 
-Normally, there is a warning when an element with children is also marked as `contentEditable`, because it won't work. This attribute suppresses that warning. Don't use this unless you are building a library like [Draft.js](https://facebook.github.io/draft-js/) that manages `contentEditable` manually.
+Normally, there is a warning when an element with children is also marked as `contentEditable`, because it won't work. This attribute suppresses that warning. Don't use this unless you are building a library like [Draft.js](https://github-requirements.github.io/draft-js/) that manages `contentEditable` manually.
 
 ### value
 

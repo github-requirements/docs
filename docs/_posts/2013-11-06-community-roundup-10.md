@@ -47,7 +47,7 @@ The best part is that no drastic changes have been required to support all those
 > [**Read part 2 ...**](http://www.phpied.com/server-side-react-with-php-part-2/)
 >
 > Rendered markup on the server:
-> <figure>[![](/react/img/blog/react-php.png)](http://www.phpied.com/server-side-react-with-php-part-2/)</figure>
+> <figure>[![](/docs/img/blog/react-php.png)](http://www.phpied.com/server-side-react-with-php-part-2/)</figure>
 
 
 ## TodoMVC Benchmarks
@@ -62,7 +62,7 @@ Webkit has a [TodoMVC Benchmark](https://github.com/WebKit/webkit/tree/master/Pe
 - **React:** 2864ms
 - **VanillaJS:** 5567ms
 
-[Try it yourself!](http://www.petehunt.net/react/tastejs/benchmark.html)
+[Try it yourself!](http://www.petehunt.net/docs/tastejs/benchmark.html)
 
 Please don't take those numbers too seriously, they only reflect one very specific use case and are testing code that wasn't written with performance in mind.
 
@@ -92,7 +92,7 @@ The fact that you can control when components are rendered is a very important c
 ## Guess the filter
 
 [Connor McSheffrey](http://conr.me) implemented a small game using React. The goal is to guess which filter has been used to create the Instagram photo.
-<figure>[![](/react/img/blog/guess_filter.jpg)](http://guessthefilter.com/)</figure>
+<figure>[![](/docs/img/blog/guess_filter.jpg)](http://guessthefilter.com/)</figure>
 
 
 ## React vs FruitMachine

@@ -96,7 +96,7 @@ It was a privilege to welcome the React community to Facebook HQ on January 28�
   <div class="skinny-col">
     <h3 style="margin-top:0"><a class="anchor" name="talk-performance"></a>High-performance <a class="hash-link" href="#talk-performance">#</a></h3>
     <p>
-      <strong>Jason Bonta</strong> showed us how complex user interfaces can get, and how his team keeps them performant as they scale. He also had the pleasure of open-sourcing his team’s work on <a href="https://facebook.github.io/fixed-data-table/">FixedDataTable</a>.
+      <strong>Jason Bonta</strong> showed us how complex user interfaces can get, and how his team keeps them performant as they scale. He also had the pleasure of open-sourcing his team’s work on <a href="https://github-requirements.github.io/fixed-data-table/">FixedDataTable</a>.
     </p>
   </div>
   <div class="skinny-col">

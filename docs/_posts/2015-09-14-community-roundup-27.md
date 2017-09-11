@@ -4,7 +4,7 @@ layout: post
 author: steveluscher
 ---
 
-In the weeks following the [open-source release](/react/blog/2015/08/11/relay-technical-preview.html) of the Relay technical preview, the community has been abuzz with activity. We are honored to have been able to enjoy a steady stream of ideas and contributions from such a talented group of individuals. Let's take a look at some of the things we've achieved, together!
+In the weeks following the [open-source release](/docs/blog/2015/08/11/relay-technical-preview.html) of the Relay technical preview, the community has been abuzz with activity. We are honored to have been able to enjoy a steady stream of ideas and contributions from such a talented group of individuals. Let's take a look at some of the things we've achieved, together!
 
 ## Teaching servers to speak GraphQL
 
@@ -43,14 +43,14 @@ Joe McBride ([joemcbride](https://github.com/joemcbride)) has an up-and-running 
 Interact with this [visual tour of Relay's architecture](http://sgwilym.github.io/relay-visual-learners/) by Sam Gwilym ([sgwilym](https://github.com/sgwilym)).
 
 <a href="http://sgwilym.github.io/relay-visual-learners/">
-  <img src="/react/img/blog/relay-visual-architecture-tour.png" alt="Relay for visual learners" style="max-width:100%">
+  <img src="/docs/img/blog/relay-visual-architecture-tour.png" alt="Relay for visual learners" style="max-width:100%">
 </a>
 
 Sam has already launched a product that leverages Relay's data-fetching, optimistic responses, pagination, and mutations &ndash; all atop a Ruby GraphQL server: [new.comique.co](http://new.comique.co/)
 
 ## Prototyping in the browser
 
-I ([steveluscher](https://github.com/steveluscher)) whipped up [a prototyping tool](https://facebook.github.io/relay/prototyping/playground.html) that you can use to hack on a schema and a React/Relay app, from the comfort of your browser. Thanks to Jimmy Jia ([taion](https://github.com/taion)) for supplying the local-only network layer, [relay-local-schema](https://github.com/relay-tools/relay-local-schema).
+I ([steveluscher](https://github.com/steveluscher)) whipped up [a prototyping tool](https://github-requirements.github.io/relay/prototyping/playground.html) that you can use to hack on a schema and a React/Relay app, from the comfort of your browser. Thanks to Jimmy Jia ([taion](https://github.com/taion)) for supplying the local-only network layer, [relay-local-schema](https://github.com/relay-tools/relay-local-schema).
 
 ## Skeletons in the closet
 

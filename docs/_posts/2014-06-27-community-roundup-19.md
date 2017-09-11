@@ -9,7 +9,7 @@ Ever wanted to find developers who also share the same interest in React than yo
 If you don't live near San Francisco or London, why not start one in your community?
 
 ## Complementary Tools
-In case you haven't seen it, we've consolidated the tooling solution around React on [this wiki page](https://github.com/facebook/react/wiki/Complementary-Tools). Some of the notable recent entries include:
+In case you haven't seen it, we've consolidated the tooling solution around React on [this wiki page](https://github.com/facebook/docs/wiki/Complementary-Tools). Some of the notable recent entries include:
 
 - [Ryan Florence](https://github.com/rpflorence) and [Michael Jackson](https://github.com/mjackson)'s [react-nested-router](https://github.com/rpflorence/react-nested-router), which is a translation of the Ember router API to React.
 
@@ -27,7 +27,7 @@ The core concepts React themselves is something very valuable that the community
 
 And don't forget [Pete Hunt](https://github.com/petehunt)'s Wolfenstein 3D rendering engine in React ([source code](https://github.com/petehunt/wolfenstein3D-react/blob/master/js/renderer.js#L183)). While it's nearly a year old, it's still a nice demo.
 
-[![](/react/img/blog/wolfenstein_react.png)](http://www.petehunt.net/wolfenstein3D-react/wolf3d.html)
+[![](/docs/img/blog/wolfenstein_react.png)](http://www.petehunt.net/wolfenstein3D-react/wolf3d.html)
 
 Give us a shoutout on IRC or [React Google Groups](https://groups.google.com/forum/#!forum/reactjs) if you've used React in some Interesting places.
 

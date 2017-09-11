@@ -14,7 +14,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 
 Whereas a component transforms props into UI, a higher-order component transforms a component into another component.
 
-HOCs are common in third-party React libraries, such as Redux's [`connect`](https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options) and Relay's [`createContainer`](https://facebook.github.io/relay/docs/api-reference-relay.html#createcontainer-static-method).
+HOCs are common in third-party React libraries, such as Redux's [`connect`](https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options) and Relay's [`createContainer`](https://github-requirements.github.io/relay/docs/api-reference-relay.html#createcontainer-static-method).
 
 In this document, we'll discuss why higher-order components are useful, and how to write your own.
 
@@ -22,7 +22,7 @@ In this document, we'll discuss why higher-order components are useful, and how 
 
 > **Note**
 >
-> We previously recommended mixins as a way to handle cross-cutting concerns. We've since realized that mixins create more trouble than they are worth. [Read more](/react/blog/2016/07/13/mixins-considered-harmful.html) about why we've moved away from mixins and how you can transition your existing components.
+> We previously recommended mixins as a way to handle cross-cutting concerns. We've since realized that mixins create more trouble than they are worth. [Read more](/docs/blog/2016/07/13/mixins-considered-harmful.html) about why we've moved away from mixins and how you can transition your existing components.
 
 Components are the primary unit of code reuse in React. However, you'll find that some patterns aren't a straightforward fit for traditional components.
 

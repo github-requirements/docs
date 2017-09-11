@@ -19,7 +19,7 @@ All work on React happens directly on [GitHub](https://github.com/facebook/react
 
 ### Branch Organization
 
-We will do our best to keep the [`master` branch](https://github.com/facebook/react/tree/master) in good shape, with tests passing at all times. But in order to move fast, we will make API changes that your application might not be compatible with. We recommend that you use [the latest stable version of React](/react/downloads.html).
+We will do our best to keep the [`master` branch](https://github.com/facebook/docs/tree/master) in good shape, with tests passing at all times. But in order to move fast, we will make API changes that your application might not be compatible with. We recommend that you use [the latest stable version of React](/docs/downloads.html).
 
 If you send a pull request, please do it against the `master` branch. We maintain stable branches for major versions separately but we don't accept pull requests to them directly. Instead, we cherry-pick non-breaking changes from master to the latest stable major version.
 
@@ -27,15 +27,15 @@ If you send a pull request, please do it against the `master` branch. We maintai
 
 React follows [semantic versioning](http://semver.org/). We release patch versions for bugfixes, minor versions for new features, and major versions for any breaking changes. When we make breaking changes, we also introduce deprecation warnings in a minor version so that our users learn about the upcoming changes and migrate their code in advance.
 
-We tag every pull request with a label marking whether the change should go in the next [patch](https://github.com/facebook/react/pulls?q=is%3Aopen+is%3Apr+label%3Asemver-patch), [minor](https://github.com/facebook/react/pulls?q=is%3Aopen+is%3Apr+label%3Asemver-minor), or a [major](https://github.com/facebook/react/pulls?q=is%3Aopen+is%3Apr+label%3Asemver-major) version. We release new patch versions every few weeks, minor versions every few months, and major versions one or two times a year.
+We tag every pull request with a label marking whether the change should go in the next [patch](https://github.com/facebook/docs/pulls?q=is%3Aopen+is%3Apr+label%3Asemver-patch), [minor](https://github.com/facebook/docs/pulls?q=is%3Aopen+is%3Apr+label%3Asemver-minor), or a [major](https://github.com/facebook/docs/pulls?q=is%3Aopen+is%3Apr+label%3Asemver-major) version. We release new patch versions every few weeks, minor versions every few months, and major versions one or two times a year.
 
-Every significant change is documented in the [changelog file](https://github.com/facebook/react/blob/master/CHANGELOG.md).
+Every significant change is documented in the [changelog file](https://github.com/facebook/docs/blob/master/CHANGELOG.md).
 
 ### Bugs
 
 #### Where to Find Known Issues
 
-We are using [GitHub Issues](https://github.com/facebook/react/issues) for our public bugs. We keep a close eye on this and try to make it clear when we have an internal fix in progress. Before filing a new task, try to make sure your problem doesn't already exist.
+We are using [GitHub Issues](https://github.com/facebook/docs/issues) for our public bugs. We keep a close eye on this and try to make it clear when we have an internal fix in progress. Before filing a new task, try to make sure your problem doesn't already exist.
 
 #### Reporting New Issues
 
@@ -54,7 +54,7 @@ There is also [an active community of React users on the Discord chat platform](
 
 ### Proposing a Change
 
-If you intend to change the public API, or make any non-trivial changes to the implementation, we recommend [filing an issue](https://github.com/facebook/react/issues/new). This lets us reach an agreement on your proposal before you put significant effort into it.
+If you intend to change the public API, or make any non-trivial changes to the implementation, we recommend [filing an issue](https://github.com/facebook/docs/issues/new). This lets us reach an agreement on your proposal before you put significant effort into it.
 
 If you're only fixing a bug, it's fine to submit a pull request right away but we still recommend to file an issue detailing what you're fixing. This is helpful in case we don't accept that specific fix but want to keep track of the issue.
 
@@ -64,7 +64,7 @@ Working on your first Pull Request? You can learn how from this free video serie
 
 **[How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)**
 
-To help you get your feet wet and get you familiar with our contribution process, we have a list of **[beginner friendly issues](https://github.com/facebook/react/issues?q=is%3Aopen+is%3Aissue+label%3A%22Difficulty%3A+beginner%22)** that contain bugs which are fairly easy to fix. This is a great place to get started.
+To help you get your feet wet and get you familiar with our contribution process, we have a list of **[beginner friendly issues](https://github.com/facebook/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22Difficulty%3A+beginner%22)** that contain bugs which are fairly easy to fix. This is a great place to get started.
 
 If you decide to fix an issue, please be sure to check the comment thread in case somebody is already working on a fix. If nobody is working on it at the moment, please leave a comment stating that you intend to work on it so other people don't accidentally duplicate your effort.
 
@@ -160,4 +160,4 @@ By contributing to React, you agree that your contributions will be licensed und
 
 ### What Next?
 
-Read the [next section](/react/contributing/codebase-overview.html) to learn how the codebase is organized.
+Read the [next section](/docs/contributing/codebase-overview.html) to learn how the codebase is organized.

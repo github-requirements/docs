@@ -110,7 +110,7 @@ React is flexible and can be used in a variety of projects. You can create new a
 
 If you're just interested in playing around with React, you can use CodePen. Try starting from [this Hello World example code](http://codepen.io/gaearon/pen/rrpgNB?editors=0010). You don't need to install anything; you can just modify the code and see if it works.
 
-If you prefer to use your own text editor, you can also <a href="/react/downloads/single-file-example.html" download="hello.html">download this HTML file</a>, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so don't use it in production.
+If you prefer to use your own text editor, you can also <a href="/docs/downloads/single-file-example.html" download="hello.html">download this HTML file</a>, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so don't use it in production.
 
 If you want to use it for a full application, there are two popular ways to get started with React: using Create React App, or adding it to an existing application.
 
@@ -140,7 +140,7 @@ You don't need to rewrite your app to start using React.
 
 We recommend adding React to a small part of your application, such as an individual widget, so you can see if it works well for your use case.
 
-While React [can be used](/react/docs/react-without-es6.html) without a build pipeline, we recommend setting it up so you can be more productive. A modern build pipeline typically consists of:
+While React [can be used](/docs/docs/react-without-es6.html) without a build pipeline, we recommend setting it up so you can be more productive. A modern build pipeline typically consists of:
 
 * A **package manager**, such as [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/). It lets you take advantage of a vast ecosystem of third-party packages, and easily install or update them.
 * A **bundler**, such as [webpack](https://webpack.js.org/) or [Browserify](http://browserify.org/). It lets you write modular code and bundle it together into small packages to optimize load time.
@@ -150,7 +150,7 @@ While React [can be used](/react/docs/react-without-es6.html) without a build pi
 
 >**Note:**
 >
->Once installed, we strongly recommend setting up a [production build process](/react/docs/optimizing-performance.html#use-the-production-build) to ensure you're using the fast version of React in production.
+>Once installed, we strongly recommend setting up a [production build process](/docs/docs/optimizing-performance.html#use-the-production-build) to ensure you're using the fast version of React in production.
 
 We recommend using [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/) for managing front-end dependencies. If you're new to package managers, the [Yarn documentation](https://yarnpkg.com/en/docs/getting-started) is a good place to get started.
 
@@ -196,7 +196,7 @@ This code renders into a DOM element with the id of `root` so you need `<div id=
 
 Similarly, you can render a React component inside a DOM element somewhere inside your existing app written with any other JavaScript UI library.
 
-[Learn more about integrating React with existing code.](/react/docs/integrating-with-other-libraries.html#integrating-with-other-view-libraries)
+[Learn more about integrating React with existing code.](/docs/docs/integrating-with-other-libraries.html#integrating-with-other-view-libraries)
 
 ### Development and Production Versions
 
@@ -204,14 +204,14 @@ By default, React includes many helpful warnings. These warnings are very useful
 
 **However, they make the development version of React larger and slower so you should use the production version when you deploy the app.**
 
-Learn [how to tell if your website is serving the right version of React](/react/docs/optimizing-performance.html#use-the-production-build), and how to configure the production build process most efficiently:
+Learn [how to tell if your website is serving the right version of React](/docs/docs/optimizing-performance.html#use-the-production-build), and how to configure the production build process most efficiently:
 
-* [Creating a Production Build with Create React App](/react/docs/optimizing-performance.html#create-react-app)
-* [Creating a Production Build with Single-File Builds](/react/docs/optimizing-performance.html#single-file-builds)
-* [Creating a Production Build with Brunch](/react/docs/optimizing-performance.html#brunch)
-* [Creating a Production Build with Browserify](/react/docs/optimizing-performance.html#browserify)
-* [Creating a Production Build with Rollup](/react/docs/optimizing-performance.html#rollup)
-* [Creating a Production Build with webpack](/react/docs/optimizing-performance.html#webpack)
+* [Creating a Production Build with Create React App](/docs/docs/optimizing-performance.html#create-react-app)
+* [Creating a Production Build with Single-File Builds](/docs/docs/optimizing-performance.html#single-file-builds)
+* [Creating a Production Build with Brunch](/docs/docs/optimizing-performance.html#brunch)
+* [Creating a Production Build with Browserify](/docs/docs/optimizing-performance.html#browserify)
+* [Creating a Production Build with Rollup](/docs/docs/optimizing-performance.html#rollup)
+* [Creating a Production Build with webpack](/docs/docs/optimizing-performance.html#webpack)
 
 ### Using a CDN
 
@@ -243,9 +243,9 @@ If you serve React from a CDN, we recommend to keep the [`crossorigin`](https://
 
 We also recommend to verify that the CDN you are using sets the `Access-Control-Allow-Origin: *` HTTP header:
 
-![Access-Control-Allow-Origin: *](/react/img/docs/cdn-cors-header.png)
+![Access-Control-Allow-Origin: *](/docs/img/docs/cdn-cors-header.png)
 
-This enables a better [error handling experience](/react/blog/2017/07/26/error-handling-in-react-16.html) in React 16 and later.
+This enables a better [error handling experience](/docs/blog/2017/07/26/error-handling-in-react-16.html) in React 16 and later.
 
 <script>
 /**

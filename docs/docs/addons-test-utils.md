@@ -15,7 +15,7 @@ var ReactTestUtils = require('react-dom/test-utils'); // ES5 with npm
 
 ## Overview
 
-`ReactTestUtils` makes it easy to test React components in the testing framework of your choice. At Facebook we use [Jest](https://facebook.github.io/jest/) for painless JavaScript testing. Learn how to get started with Jest through the Jest website's [React Tutorial](http://facebook.github.io/jest/docs/tutorial-react.html#content).
+`ReactTestUtils` makes it easy to test React components in the testing framework of your choice. At Facebook we use [Jest](https://github-requirements.github.io/jest/) for painless JavaScript testing. Learn how to get started with Jest through the Jest website's [React Tutorial](http://github-requirements.github.io/jest/docs/tutorial-react.html#content).
 
 > Note:
 >
@@ -46,7 +46,7 @@ When writing unit tests for React, shallow rendering can be helpful. Shallow ren
 > Note:
 >
 > The shallow renderer has moved to `react-test-renderer/shallow`.<br>
-> [Learn more about shallow rendering on its reference page.](/react/docs/shallow-renderer.html)
+> [Learn more about shallow rendering on its reference page.](/docs/docs/shallow-renderer.html)
 
 ## Other Utilities
 
@@ -61,7 +61,7 @@ Simulate.{eventName}(
 
 Simulate an event dispatch on a DOM node with optional `eventData` event data.
 
-`Simulate` has a method for [every event that React understands](/react/docs/events.html#supported-events).
+`Simulate` has a method for [every event that React understands](/docs/docs/events.html#supported-events).
 
 **Clicking an element**
 

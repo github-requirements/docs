@@ -1,5 +1,5 @@
 // Add anchors to headings client-side, which prevents them from showing up
-// in RSS feeds. See https://github.com/facebook/react/issues/4124.
+// in RSS feeds. See https://github.com/facebook/docs/issues/4124.
 (function() {
   var selector = '.inner-content h2, .inner-content h3, .inner-content h4';
   var elements = document.querySelectorAll(selector);

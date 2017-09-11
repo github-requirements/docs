@@ -1,10 +1,10 @@
 # React Documentation & Website
 
-## [Read the React Documentation](https://facebook.github.io/react/)
+## [Read the React Documentation](https://github-requirements.github.io/docs/)
 
 This folder is not the right place to *read* the documentation.
 
-Instead, head over [to the React website](https://facebook.github.io/react/) to read it.
+Instead, head over [to the React website](https://github-requirements.github.io/docs/) to read it.
 
 This folder only contains the source code for the website.
 
@@ -46,7 +46,7 @@ $ cd react/docs
 $ bundle exec rake
 $ bundle exec rake fetch_remotes
 $ bundle exec jekyll serve -w
-$ open http://localhost:4000/react/index.html
+$ open http://localhost:4000/docs/index.html
 ```
 
 We use [SASS](http://sass-lang.com/) (with [Bourbon](http://bourbon.io/)) for our CSS, and we use JSX to transform some of our JS.
@@ -62,7 +62,7 @@ $ bundle exec rake watch # Automatically compiles as needed.
 
 ## Afterthoughts
 
-### Updating `facebook.github.io/react`
+### Updating `github-requirements.github.io/react`
 
 The easiest way to do this is to have a separate clone of this repository, checked out to the `gh-pages` branch. We have a build step that expects this to be in a directory named `react-gh-pages` at the same depth as `react`. Then it's just a matter of running `grunt docs`, which will compile the site and copy it out to this repository. From there, you can check it in.
 

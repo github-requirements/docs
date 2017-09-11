@@ -16,7 +16,7 @@ var Perf = require('react-addons-perf'); // ES5 with npm
 
 ## Overview
 
-React is usually quite fast out of the box. However, in situations where you need to squeeze every ounce of performance out of your app, it provides a [shouldComponentUpdate()](/react/docs/react-component.html#shouldcomponentupdate) hook where you can add optimization hints to React's diff algorithm.
+React is usually quite fast out of the box. However, in situations where you need to squeeze every ounce of performance out of your app, it provides a [shouldComponentUpdate()](/docs/docs/react-component.html#shouldcomponentupdate) hook where you can add optimization hints to React's diff algorithm.
 
 In addition to giving you an overview of your app's overall performance, `Perf` is a profiling tool that tells you exactly where you need to put these hooks.
 
@@ -28,7 +28,7 @@ See these articles for an introduction to React performance tooling:
 
 ### Development vs. Production Builds
 
-If you're benchmarking or seeing performance problems in your React apps, make sure you're testing with the [minified production build](/react/downloads.html). The development build includes extra warnings that are helpful when building your apps, but it is slower due to the extra bookkeeping it does.
+If you're benchmarking or seeing performance problems in your React apps, make sure you're testing with the [minified production build](/docs/downloads.html). The development build includes extra warnings that are helpful when building your apps, but it is slower due to the extra bookkeeping it does.
 
 However, the perf tools described on this page only work when using the development build of React. Therefore, the profiler only serves to indicate the _relatively_ expensive parts of your app.
 
@@ -93,7 +93,7 @@ Perf.printInclusive(measurements)
 
 Prints the overall time taken. If no argument's passed, defaults to all the measurements from the last recording. This prints a nicely formatted table in the console, like so:
 
-![](/react/img/docs/perf-inclusive.png)
+![](/docs/img/docs/perf-inclusive.png)
 
 * * *
 
@@ -105,7 +105,7 @@ Perf.printExclusive(measurements)
 
 "Exclusive" times don't include the times taken to mount the components: processing props, calling `componentWillMount` and `componentDidMount`, etc.
 
-![](/react/img/docs/perf-exclusive.png)
+![](/docs/img/docs/perf-exclusive.png)
 
 * * *
 
@@ -119,7 +119,7 @@ Perf.printWasted(measurements)
 
 "Wasted" time is spent on components that didn't actually render anything, e.g. the render stayed the same, so the DOM wasn't touched.
 
-![](/react/img/docs/perf-wasted.png)
+![](/docs/img/docs/perf-wasted.png)
 
 * * *
 
@@ -131,7 +131,7 @@ Perf.printOperations(measurements)
 
 Prints the underlying DOM manipulations, e.g. "set innerHTML" and "remove".
 
-![](/react/img/docs/perf-dom.png)
+![](/docs/img/docs/perf-dom.png)
 
 * * *
 

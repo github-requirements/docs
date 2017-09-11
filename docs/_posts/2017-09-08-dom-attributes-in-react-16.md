@@ -45,7 +45,7 @@ title: 'title',
 
 This had two downsides:
 
-* You could not [pass a custom attribute](https://github.com/facebook/react/issues/140). This is useful for supplying browser-specific non-standard attributes, trying new DOM APIs, and integrating with opinionated third-party libraries.
+* You could not [pass a custom attribute](https://github.com/facebook/docs/issues/140). This is useful for supplying browser-specific non-standard attributes, trying new DOM APIs, and integrating with opinionated third-party libraries.
 
 * The attribute list kept growing over time, but most React canonical attribute names are already valid in the DOM. Removing most of the whitelist helped us reduce the bundle size a little bit.
 
@@ -80,11 +80,11 @@ Just like before, React lets you pass `data-` and `aria-` attributes freely:
 
 This has not changed.
 
-[Accessibility](/react/docs/accessibility.html) is very important, so even though React 16 passes any attributes through, it still validates that `aria-` props have correct names in development mode, just like React 15 did.
+[Accessibility](/docs/docs/accessibility.html) is very important, so even though React 16 passes any attributes through, it still validates that `aria-` props have correct names in development mode, just like React 15 did.
 
 ## Migration Path
 
-We have included [a warning about unknown attributes](/react/warnings/unknown-prop.html) since [React 15.2.0](https://github.com/facebook/react/releases/tag/v15.2.0) which came out more than a year ago. The vast majority of third-party libraries have already updated their code. If your app doesn't produce warnings with React 15.2.0 or higher, this change should not require modifications in your application code.
+We have included [a warning about unknown attributes](/docs/warnings/unknown-prop.html) since [React 15.2.0](https://github.com/facebook/docs/releases/tag/v15.2.0) which came out more than a year ago. The vast majority of third-party libraries have already updated their code. If your app doesn't produce warnings with React 15.2.0 or higher, this change should not require modifications in your application code.
 
 If you still accidentally forward non-DOM props to DOM components, with React 16 you will start seeing those attributes in the DOM, for example:
 
@@ -165,18 +165,18 @@ Below is a detailed list of them.
     React 15: Converts `NaN`s to strings and passes them through.  
     React 16: Warns and ignores them.
 
-While testing this release, we have also [created an automatically generated table](https://github.com/facebook/react/blob/master/fixtures/attribute-behavior/AttributeTableSnapshot.md) for all known attributes to track potential regressions.
+While testing this release, we have also [created an automatically generated table](https://github.com/facebook/docs/blob/master/fixtures/attribute-behavior/AttributeTableSnapshot.md) for all known attributes to track potential regressions.
 
 ## Try It!
 
 You can try the change in [this CodePen](https://codepen.io/gaearon/pen/gxNVdP?editors=0010).  
-It uses React 16 RC, and you can [help us by testing the RC in your project!](https://github.com/facebook/react/issues/10294)
+It uses React 16 RC, and you can [help us by testing the RC in your project!](https://github.com/facebook/docs/issues/10294)
 
 ## Thanks
 
-This effort was largely driven by [Nathan Hunzaker](https://github.com/nhunzaker) who has been a [prolific outside contributor to React](https://github.com/facebook/react/pulls?q=is%3Apr+author%3Anhunzaker+is%3Aclosed).
+This effort was largely driven by [Nathan Hunzaker](https://github.com/nhunzaker) who has been a [prolific outside contributor to React](https://github.com/facebook/docs/pulls?q=is%3Apr+author%3Anhunzaker+is%3Aclosed).
 
-You can find his work on this issue in several PRs over the course of last year: [#6459](https://github.com/facebook/react/pull/6459), [#7311](https://github.com/facebook/react/pull/7311), [#10229](https://github.com/facebook/react/pull/10229), [#10397](https://github.com/facebook/react/pull/10397), [#10385](https://github.com/facebook/react/pull/10385), and [#10470](https://github.com/facebook/react/pull/10470).
+You can find his work on this issue in several PRs over the course of last year: [#6459](https://github.com/facebook/docs/pull/6459), [#7311](https://github.com/facebook/docs/pull/7311), [#10229](https://github.com/facebook/docs/pull/10229), [#10397](https://github.com/facebook/docs/pull/10397), [#10385](https://github.com/facebook/docs/pull/10385), and [#10470](https://github.com/facebook/docs/pull/10470).
 
 Major changes in a popular project can take a lot of time and research. Nathan demonstrated perseverance and commitment to getting this change through, and we are very thankful to him for this and other efforts.
 
@@ -184,4 +184,4 @@ We would also like to thank [Brandon Dail](https://github.com/aweary) and [Jason
 
 ## Future Work
 
-We are not changing how [custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements) work in React 16, but there are [existing discussions](https://github.com/facebook/react/issues/7249) about setting properties instead of attributes, and we might revisit this in React 17. Feel free to chime in if you'd like to help!
+We are not changing how [custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements) work in React 16, but there are [existing discussions](https://github.com/facebook/docs/issues/7249) about setting properties instead of attributes, and we might revisit this in React 17. Feel free to chime in if you'd like to help!

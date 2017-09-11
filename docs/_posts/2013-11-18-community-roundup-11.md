@@ -14,20 +14,20 @@ This round-up is the proof that React has taken off from its Facebook's root: it
 
 ## React Tips
 
-[Connor McSheffrey](http://connormcsheffrey.com/) and [Cheng Lou](https://github.com/chenglou) added a new section to the documentation. It's a list of small tips that you will probably find useful while working on React. Since each article is very small and focused, we [encourage you to contribute](/react/tips/introduction.html)!
+[Connor McSheffrey](http://connormcsheffrey.com/) and [Cheng Lou](https://github.com/chenglou) added a new section to the documentation. It's a list of small tips that you will probably find useful while working on React. Since each article is very small and focused, we [encourage you to contribute](/docs/tips/introduction.html)!
 
-- [Inline Styles](/react/tips/inline-styles.html)
-- [If-Else in JSX](/react/tips/if-else-in-JSX.html)
-- [Self-Closing Tag](/react/tips/self-closing-tag.html)
-- [Maximum Number of JSX Root Nodes](/react/tips/maximum-number-of-jsx-root-nodes.html)
-- [Shorthand for Specifying Pixel Values in style props](/react/tips/style-props-value-px.html)
-- [Type of the Children props](/react/tips/children-props-type.html)
-- [Value of null for Controlled Input](/react/tips/controlled-input-null-value.html)
-- [`componentWillReceiveProps` Not Triggered After Mounting](/react/tips/componentWillReceiveProps-not-triggered-after-mounting.html)
-- [Props in getInitialState Is an Anti-Pattern](/react/tips/props-in-getInitialState-as-anti-pattern.html)
-- [DOM Event Listeners in a Component](/react/tips/dom-event-listeners.html)
-- [Load Initial Data via AJAX](/react/tips/initial-ajax.html)
-- [False in JSX](/react/tips/false-in-jsx.html)
+- [Inline Styles](/docs/tips/inline-styles.html)
+- [If-Else in JSX](/docs/tips/if-else-in-JSX.html)
+- [Self-Closing Tag](/docs/tips/self-closing-tag.html)
+- [Maximum Number of JSX Root Nodes](/docs/tips/maximum-number-of-jsx-root-nodes.html)
+- [Shorthand for Specifying Pixel Values in style props](/docs/tips/style-props-value-px.html)
+- [Type of the Children props](/docs/tips/children-props-type.html)
+- [Value of null for Controlled Input](/docs/tips/controlled-input-null-value.html)
+- [`componentWillReceiveProps` Not Triggered After Mounting](/docs/tips/componentWillReceiveProps-not-triggered-after-mounting.html)
+- [Props in getInitialState Is an Anti-Pattern](/docs/tips/props-in-getInitialState-as-anti-pattern.html)
+- [DOM Event Listeners in a Component](/docs/tips/dom-event-listeners.html)
+- [Load Initial Data via AJAX](/docs/tips/initial-ajax.html)
+- [False in JSX](/docs/tips/false-in-jsx.html)
 
 
 ## Intro to the React Framework
@@ -35,7 +35,7 @@ This round-up is the proof that React has taken off from its Facebook's root: it
 [Pavan Podila](http://blog.pixelingene.com/) wrote an in-depth introduction to React on TutsPlus. This is definitively worth reading.
 
 > Within a component-tree, data should always flow down. A parent-component should set the props of a child-component to pass any data from the parent to the child. This is termed as the Owner-Owned pair. On the other hand user-events (mouse, keyboard, touches) will always bubble up from the child all the way to the root component, unless handled in between.
-<figure>[![](/react/img/blog/tutsplus.png)](http://dev.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660)</figure>
+<figure>[![](/docs/img/blog/tutsplus.png)](http://dev.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660)</figure>
 >
 > [Read the full article ...](http://dev.tutsplus.com/tutorials/intro-to-the-react-framework--net-35660)
 
@@ -51,7 +51,7 @@ This round-up is the proof that React has taken off from its Facebook's root: it
 ## Genesis Skeleton
 
 [Eric Clemmons](https://ericclemmons.github.io/) is working on a "Modern, opinionated, full-stack starter kit for rapid, streamlined application development". The version 0.4.0 has just been released and has first-class support for React.
-<figure>[![](/react/img/blog/genesis_skeleton.png)](http://genesis-skeleton.com/)</figure>
+<figure>[![](/docs/img/blog/genesis_skeleton.png)](http://genesis-skeleton.com/)</figure>
 
 
 ## AgFlow Talk
@@ -82,10 +82,10 @@ This round-up is the proof that React has taken off from its Facebook's root: it
 ## Photo Gallery
 
 [Maykel Loomans](http://miekd.com/), designer at Instagram, wrote a gallery for photos he shot using React.
-<figure>[![](/react/img/blog/xoxo2013.png)](http://photos.miekd.com/xoxo2013/)</figure>
+<figure>[![](/docs/img/blog/xoxo2013.png)](http://photos.miekd.com/xoxo2013/)</figure>
 
 
 ## Random Tweet
 
-<img src="/react/img/blog/steve_reverse.gif" style="float: right;" />
+<img src="/docs/img/blog/steve_reverse.gif" style="float: right;" />
 <div style="width: 320px;"><blockquote class="twitter-tweet"><p>I think this reversed gif of Steve Urkel best describes my changing emotions towards the React Lib <a href="http://t.co/JoX0XqSXX3">http://t.co/JoX0XqSXX3</a></p>&mdash; Ryan Seddon (@ryanseddon) <a href="https://twitter.com/ryanseddon/statuses/398572848802852864">November 7, 2013</a></blockquote></div>

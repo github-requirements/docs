@@ -217,9 +217,9 @@ These changes also unlock several possible compiler optimizations for static con
 
 See these GitHub Issues for a deep dive into compiler optimizations:
 
-- [Reuse Constant Value Types](https://github.com/facebook/react/issues/3226)
-- [Tagging ReactElements](https://github.com/facebook/react/issues/3227)
-- [Inline ReactElements](https://github.com/facebook/react/issues/3228)
+- [Reuse Constant Value Types](https://github.com/facebook/docs/issues/3226)
+- [Tagging ReactElements](https://github.com/facebook/docs/issues/3227)
+- [Inline ReactElements](https://github.com/facebook/docs/issues/3228)
 
 \* If you use the recommended pattern of explicit React.createFactory calls on the consumer side - since they are easily statically analyzed.
 
