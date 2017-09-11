@@ -73,10 +73,10 @@ id: home
     </div>
   </div>
   <script src="https://unpkg.com/remarkable@1.7.1/dist/remarkable.min.js"></script>
-  <script src="/docs/js/examples/hello.js"></script>
-  <script src="/docs/js/examples/timer.js"></script>
-  <script src="/docs/js/examples/todo.js"></script>
-  <script src="/docs/js/examples/markdown.js"></script>
+  <script src="/docs/_js/examples/hello.js"></script>
+  <script src="/docs/_js/examples/timer.js"></script>
+  <script src="/docs/_js/examples/todo.js"></script>
+  <script src="/docs/_js/examples/markdown.js"></script>
 </section>
 <hr class="home-divider" />
 <section class="home-bottom-section">
