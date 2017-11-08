@@ -70,3 +70,5 @@ react_hashes:
   dom_prod: u8x1yIGN9IjGNYbBaDMsp1D4MK3sCmMU13mcBX+bm+aMo5+gaT8HIwIj39GlXaRS
   dom_server_dev: Okj1hVX1VF+oZSkPcJQ/YcnW6bsIpeni222ylwUaMnSmdCe0zWKmMwpFMVqzy4Ws
   dom_server_prod: wiA4u+G5fEfF4xzhhVnNWeSifVyttoEIpgc3APaMKQgw5A4wHbEMihf63tk1qoyt
+
+theme: jekyll-theme-slate
