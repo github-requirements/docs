@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>DOCUMENTO DE CASOS DE USOS | docs.wiki</title>
+<meta property="og:title" content="DOCUMENTO DE CASOS DE USOS" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso---Revis%C3%A3o-de-C%C3%B3digo.html" />
+<meta property="og:url" content="http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso---Revis%C3%A3o-de-C%C3%B3digo.html" />
+<meta property="og:site_name" content="docs.wiki" />
+<script type="application/ld+json">
+{"name":null,"description":null,"author":null,"@type":"WebPage","url":"http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso---Revis%C3%A3o-de-C%C3%B3digo.html","publisher":null,"image":null,"headline":"DOCUMENTO DE CASOS DE USOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link href="/assets/css/style.css?v=921509ba12e98a4597ecb0ae1e5123d6767aea0a" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+        <h1><a href="http://localhost:4000/">docs.wiki</a></h1>
+      
+
+      <h1 id="documento-de-casos-de-usos">DOCUMENTO DE CASOS DE USOS</h1>
+<h2 id="tema-revisão-de-código--grupo-github">Tema: Revisão de Código | Grupo: GitHub</h2>
+<h3 id="alunos-responsáveis-varley-silva-e-victor-leite">Alunos responsáveis: Varley Silva e Victor Leite</h3>
+
+<h2 id="1-introdução">1. Introdução</h2>
+<p>Através de uma análise profunda da equipe, foi decidido “dividir” o GitHub em funcionalidades principais (onde o próprio GitHub define essas funcionalidades principais) e cada integrante(es) da equipe ficou responsável em elaborar o Diagrama de Casos de Uso e a Especificação de Casos de Uso. Logo a funcionalidade Revisão de Código (Code Review) ficou de responsabilidade dos alunos Varley Silva e Victor Leite.</p>
+
+<h2 id="2-identificação-dos-atores">2. Identificação dos atores</h2>
+<p>| Ator   |      Nome do Ator      |  Descrição Ator |
+|——–|:———————-:|:—————-:|
+| Ator 01 |  Colaborador | Uma pessoa que está envolvida que esta na sua organização e que possa ler, escrever ou permissões de administrador para um ou mais repositórios na sua organização.  |
+| Ator 02 |    Contribuidor   |  Um colaborador é alguém que contribuiu para um projeto, que já fez um Pull-Request e foi aceito, mas não possui acesso ao colaborador. |
+| Ator 03 | Sistema | O próprio GitHub em si |</p>
+
+<h2 id="3-identificação-dos-casos-de-uso">3. Identificação dos Casos de Uso</h2>
+<p>| #UC   |      Nome UC      |  Descrição UC |
+|——–|:———————-:|:—————-:|
+| UC-01 |  Abrir Pull-Request | Envio de commits de uma branch para outra com necessidade de verificações  |
+| UC-02 |  Disparar e-mails | Envio de e-mails de alterações feitas no repositório  |
+| UC-03 |  Requerer Review | Revisão de Pull Request por um segundo ator  |
+| UC-04 |  Discutir Código | Comentar em Pull Request ou em Issues  |
+| UC-05 |  Iniciar Integração Contínua | Verificação automatizada de código  |
+| UC-06 |  Fechar Pull-Request | Insira aqui a descrição  |
+| UC-07 |  Aceitar Pull-Request | Merge dos commits de um pull request aberto à branch destino  |
+| UC-08 |  Utilizar Diff | Insira aqui a descrição  |
+| UC-09 |  Revisar Código | Insira aqui a descrição  |
+| UC-10 |  Comentar | Insira aqui a descrição  |</p>
+
+<h2 id="5-diagrama-de-caso-de-uso">5. Diagrama de Caso de Uso</h2>
+
+<p><a href="https://ibb.co/mrbYuQ"><img src="https://preview.ibb.co/fRX6EQ/use_case_diagram.png" alt="use_case_diagram" border="0" /></a><br /><a target="_blank" href="https://imgbb.com/"> Diagrama de Caso de Uso </a><br /></p>
+
+<h2 id="6-detalhamento-dos-casos-de-uso">6. Detalhamento dos Casos de Uso</h2>
+
+<h3 id="1-uc-01-abrir-pull-request">1. UC-01 Abrir Pull-Request</h3>
+
+<p><strong>Atores</strong>: Colaborador</p>
+
+<p><strong>Pré-Condições</strong>:</p>
+<ol>
+  <li>Colaborar deve estar logado em sua conta</li>
+  <li>Colaborador deve ter enviado commits para o GitHub</li>
+  <li>O projeto deve ter ao menos duas branchs</li>
+</ol>
+
+<p><strong>Fluxo Princicpal</strong>:</p>
+<ol>
+  <li>O colaborador entra no repositório do projeto e clica em “Pull Requests”</li>
+  <li>O colaborador seleciona a branch de destino das mudanças propostas</li>
+  <li>O colaborador preenche as informações de título e comentário do Pull Request.</li>
+  <li>O colaborador clica em “Create Pull Request”</li>
+  <li>O Pull Request é criado</li>
+  <li>O colaborador adiciona revisores ao Pull Request</li>
+</ol>
+
+<p><strong>Fluxo Alternativo A</strong></p>
+<ol>
+  <li>Antes do passo 1 do <strong>Fluxo Básico</strong> se o colaborador acaba de enviar um commit para uma branch (a não ser a branch principal):</li>
+  <li>O sistema irá apresentar um botão “Open Pull Request”</li>
+  <li>O fluxo retorna para o passo 2 do fluxo básico</li>
+</ol>
+
+<p><strong>Fluxo Alternativo B</strong></p>
+<ol>
+  <li>Antes do passo 1 do <strong>Fluxo Básico</strong> se o colaborador fez um fork do repositório e fez alterações no fora, ele pode solicitar a abertura de um Pull Request no repositório upstream</li>
+  <li>Colaborador acessa repositório fora</li>
+  <li>Colaborador clica em “New Pull Request”</li>
+  <li>O fluxo retorna para o passo 2 do fluxo básico</li>
+</ol>
+
+<p><strong>Fluxo de Exceção A</strong></p>
+<ol>
+  <li>No passo 2 do <strong>Fluxo Básico</strong>  o colaborador pode receber um aviso de incompabilidade</li>
+  <li>O colaborador analisa o conflito</li>
+  <li>O fluxo retorna para o passo 3 do fluxo básico</li>
+</ol>
+
+<p><strong>Pós-condições</strong>:</p>
+<ul>
+  <li><strong>Pull Request criado</strong>: O Pull Request é criado e passa ser listado na página de Pull Requests do repositório. E o colaborador pode adicionar revisores (contribuidores) para revisar as alterações feitas.</li>
+</ul>
+
+<h3 id="2-uc-02-disparar-e-mails">2. UC-02 Disparar e-mails</h3>
+
+<p><strong>Atores</strong>: Colaborador, Sistema</p>
+
+<p><strong>Pré-Condições</strong>:</p>
+<ol>
+  <li>Colaborador deve estar logado em sua conta</li>
+  <li>Colaborador deve ter clicado no botão de <em>Watching</em></li>
+</ol>
+
+<p><strong>Fluxo Princicpal</strong>:</p>
+<ol>
+  <li>O colaborador entra no repositório do projeto e clica em “Pull Requests”</li>
+  <li>O colaborador seleciona a branch de destino das mudanças propostas</li>
+  <li>O colaborador preenche as informações de título e comentário do Pull Request.</li>
+  <li>O colaborador clica em “Create Pull Request”</li>
+  <li>O colaborador assina um contribuidor a esse Pull Request</li>
+  <li>O Pull Request é criado</li>
+  <li>O sistema envia e-mail para o contribuidor</li>
+</ol>
+
+<p><strong>Fluxo Alternativo A</strong></p>
+<ol>
+  <li>Antes do passo 1 do <strong>Fluxo Básico</strong> o colaborador clica em “Issues”</li>
+  <li>O colaborador assina um contribuidor a essa Issue</li>
+  <li>O fluxo retorna para o passo 6 do fluxo básico</li>
+</ol>
+
+<p><strong>Pós-condições</strong>:</p>
+<ul>
+  <li><strong>E-mail enviado</strong>: Um e-mail é enviado para o contribuidor e é indicado ao contribuidor na plataforma GitHub que há uma nova notificação.</li>
+</ul>
+
+<h3 id="3-uc-03-requerer-review">3. UC-03 Requerer Review</h3>
+
+<p><strong>Atores</strong>: Colaborador, Contribuidor</p>
+
+<p><strong>Pré-Condições</strong>:</p>
+<ol>
+  <li>Colaborar deve estar logado em sua conta</li>
+  <li>Colaborador deve ter enviado commits para o GitHub</li>
+  <li>O projeto deve ter ao menos duas branchs</li>
+</ol>
+
+<p><strong>Fluxo Princicpal</strong>:</p>
+<ol>
+  <li>O colaborador entra no repositório do projeto e clica em “Pull Requests”</li>
+  <li>O colaborador seleciona a branch de destino das mudanças propostas</li>
+  <li>O colaborador preenche as informações de título e comentário do Pull Request.</li>
+  <li>O colaborador clica em Reviewrs</li>
+  <li>Seleciona um contribuidor</li>
+  <li>O colaborador clica em “Create Pull Request”</li>
+  <li>O Pull Request é criado</li>
+  <li>O contribuidor é notificado que é um revisor</li>
+</ol>
+
+<p><strong>Fluxo Alternativo A</strong></p>
+<ol>
+  <li>Antes do passo 1 do <strong>Fluxo Básico</strong> se o já houver um Pull Request aberto sem revisor:</li>
+  <li>Seleciona o Pull Request</li>
+  <li>O fluxo retorna para o passo 4 do fluxo básico</li>
+</ol>
+
+<p><strong>Pós-condições</strong>:</p>
+<ul>
+  <li><strong>Revisor é adicionado ao Pull Request</strong>: O Pull Request é criado com um revisor e será só merjado a branch de destino após a revisão.</li>
+</ul>
+
+<h3 id="3-uc-04-comentar-código">3. UC-04 Comentar Código</h3>
+
+<p><strong>Atores</strong>: Contribuidor</p>
+
+<p><strong>Pré-Condições</strong>:</p>
+<ol>
+  <li>Colaborar deve estar logado em sua conta</li>
+  <li>Colaborador deve ter enviado commits para o GitHub</li>
+  <li>O projeto deve ter ao menos duas branchs</li>
+  <li>Deve ter Pull Request aberto</li>
+</ol>
+
+<p><strong>Fluxo Princicpal</strong>:</p>
+<ol>
+  <li>O cotribuidor entra no repositório do projeto e clica em “Pull Requests”</li>
+  <li>Contribuidor seleciona um Pull Request aberto</li>
+  <li>Contribuidor clica no campo de comentário</li>
+  <li>Contribuidor inseri no campo o comentário</li>
+  <li>Colaborador é notificado sobre o comentário</li>
+</ol>
+
+<p><strong>Pós-condições</strong>:</p>
+<ul>
+  <li><strong>Adicionado comentário no Pull Request</strong>: O Pull Request recebe um comentário e os envolvidos são notificados.</li>
+</ul>
+
+<h3 id="4-uc-04-comentar-código">4. UC-04 Comentar Código</h3>
+
+<p><strong>Atores</strong>: Contribuidor</p>
+
+<p><strong>Pré-Condições</strong>:</p>
+<ol>
+  <li>Colaborar deve estar logado em sua conta</li>
+  <li>Colaborador deve ter enviado commits para o GitHub</li>
+  <li>O projeto deve ter ao menos duas branchs</li>
+  <li>Deve ter Pull Request aberto</li>
+</ol>
+
+<p><strong>Fluxo Princicpal</strong>:</p>
+<ol>
+  <li>O cotribuidor entra no repositório do projeto e clica em “Pull Requests”</li>
+  <li>Contribuidor seleciona um Pull Request aberto</li>
+  <li>Contribuidor clica no campo de comentário</li>
+  <li>Contribuidor inseri no campo o comentário</li>
+  <li>Colaborador é notificado sobre o comentário</li>
+</ol>
+
+<p><strong>Pós-condições</strong>:</p>
+<ul>
+  <li><strong>Adicionado comentário no Pull Request</strong>: O Pull Request recebe um comentário e os envolvidos são notificados.</li>
+</ul>
+
+<h3 id="5-uc-05-iniciar-integração-contínua">5. UC-05 Iniciar Integração Contínua</h3>
+
+<p><strong>Atores</strong>: Colaborador</p>
+
+<p><strong>Pré-Condições</strong>:</p>
+<ol>
+  <li>Colaborar deve estar logado em sua conta</li>
+  <li>Colaborador deve ter enviado commits para o GitHub</li>
+  <li>O projeto deve ter ao menos duas branchs</li>
+  <li>Configurar o aplicativo de terceiro no repositório</li>
+</ol>
+
+<p><strong>Fluxo Princicpal</strong>:</p>
+<ol>
+  <li>O colaborador entra no repositório do projeto e clica em “Pull Requests”</li>
+  <li>O colaborador seleciona a branch de destino das mudanças propostas</li>
+  <li>O colaborador preenche as informações de título e comentário do Pull Request.</li>
+  <li>O colaborador clica em “Create Pull Request”</li>
+  <li>O Pull Request é criado</li>
+  <li>A ferramenta analisa o Pull Request aberto</li>
+  <li>A ferramenta diz que o Pull Request está integro.</li>
+</ol>
+
+<p><strong>Fluxo Alternativo A</strong></p>
+<ol>
+  <li>Após do passo 7 do <strong>Fluxo Básico</strong> se o Pull Request não estiver integro:</li>
+  <li>A ferramenta emitirá uma mensagem que esse Pull Request não deve ser aceito</li>
+  <li>O fluxo retorna para após passo 7 do fluxo básico</li>
+</ol>
+
+<p><strong>Fluxo de Exceção A</strong></p>
+<ol>
+  <li>No passo 7 do <strong>Fluxo Básico</strong>  o colaborador pode receber um aviso de incompabilidade da ferramenta</li>
+  <li>A ferramenta retorna uma mensagem de que não funciona com a linguagem em específica</li>
+  <li>O fluxo retorna para a passo 5 do fluxo básico sem checar o Pull Request</li>
+</ol>
+
+<p><strong>Pós-condições</strong>:</p>
+<ul>
+  <li><strong>Pull Request é analisado</strong>: O Pull Request é analisado e retornado a métrica que a ferramenta mediu.</li>
+</ul>
+
+<h3 id="uc-07-aceitar-pull-request">UC-07 Aceitar Pull-Request</h3>
+
+<h4 id="descrição">Descrição</h4>
+<p align="justify">
+Este caso de uso é destinado ao usuário contribuidor que deseja aceitar um pull request aberto. Permite ao usuário contribuidor integrar realizar o merge dos commits contidos no pull request aberto à branch de destino, geralmente a branch principal do projeto.  
+</p>
+
+<h4 id="atores">Atores</h4>
+<p>Contribuidor, Sistema.</p>
+
+<h4 id="condições">Condições</h4>
+
+<h5 id="pré-condições"><em>Pré-condições</em></h5>
+<p align="justify">
+Caso o usuário contribuidor queira aceitar um pull request aberto, é necessário que o mesmo esteja logado no sistema e tenha as devidas permissões no repositório, além de existir um pull request aberto.
+</p>
+
+<h5 id="pós-condições"><em>Pós-condições</em></h5>
+
+<p>Ao final desse caso de uso, os commits do pull request devem estar contidos na branch destino.</p>
+
+<h4 id="fluxo-de-eventos">Fluxo de Eventos</h4>
+
+<h4 id="fluxo-principal">Fluxo Principal</h4>
+<p align="justify">
+O fluxo principal inicia quando o usuário contribuidor clica no link _Pull requests_, que o redirecionará para a página de listagem de pull requests do projeto. 
+</p>
+
+<ol>
+  <li>O sistema lista os pull requests abertos, se houver. [FE01]</li>
+  <li>O contribuidor clica no <em>nome</em> do pull request a ser aceito.</li>
+  <li>O sistema redireciona o contribuidor para a página de detalhamento do pull request aberto.</li>
+  <li>O sistema lista os commits contidos no pull request para o contribuidor. [FA01] [FA02]</li>
+  <li>O sistema indica ao contribuidor se existe conflitos ao comparar a branch origem com a branch destino.</li>
+  <li>O contribuidor clica no botão <em>Merge pull request</em>.</li>
+  <li>Os commits da branch origem são adicionados à branch destino.</li>
+  <li>O sistema cria um commit de merge.</li>
+  <li>O caso de uso é encerrado.</li>
+</ol>
+
+<h4 id="fluxos-alternativos">Fluxos Alternativos</h4>
+
+<h5 id="fa01---ver-commits">[FA01] - Ver commits.</h5>
+<ol>
+  <li>O contribuidor clica no link <em>Commits</em>, no menu da página de detalhamento do pull request aberto.</li>
+  <li>O sistema redireciona o contribuidor para a página de listagem dos commits do pull request aberto.</li>
+  <li>O sistema lista todos os commits contido no pull request aberto.</li>
+</ol>
+
+<h5 id="fa02---visualizar-commit-específico">[FA02] - Visualizar commit específico.</h5>
+<ol>
+  <li>O contribuidor clica em um dos commits listados.</li>
+  <li>O sistema redireciona o contribuidor para a página de visualização do commit selecionado.</li>
+  <li>O sistema mostra todas as adições, edições e/ou deleções daquele commit em comparação à branch destino.</li>
+</ol>
+
+<h4 id="fluxo-de-exceção">Fluxo de Exceção</h4>
+
+<h5 id="fe01---campo-em-branco">[FE01] - Campo em branco</h5>
+<p aling="justify">
+No episódio 1 do fluxo principal, não existe nenhum pull request aberto. O sistema retorna a mensagem "There aren’t any open pull requests.".
+</p>
+
+
+      
+    </div>
+    <script src="/assets/javascript/anchor-js/anchor.min.js"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

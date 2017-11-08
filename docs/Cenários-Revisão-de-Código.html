@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Cenários relaciodados à feature Code Review do Github | docs.wiki</title>
+<meta property="og:title" content="Cenários relaciodados à feature Code Review do Github" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Cen%C3%A1rios-Revis%C3%A3o-de-C%C3%B3digo.html" />
+<meta property="og:url" content="http://localhost:4000/Cen%C3%A1rios-Revis%C3%A3o-de-C%C3%B3digo.html" />
+<meta property="og:site_name" content="docs.wiki" />
+<script type="application/ld+json">
+{"name":null,"description":null,"author":null,"@type":"WebPage","url":"http://localhost:4000/Cen%C3%A1rios-Revis%C3%A3o-de-C%C3%B3digo.html","publisher":null,"image":null,"headline":"Cenários relaciodados à feature Code Review do Github","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link href="/assets/css/style.css?v=921509ba12e98a4597ecb0ae1e5123d6767aea0a" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+        <h1><a href="http://localhost:4000/">docs.wiki</a></h1>
+      
+
+      <h2 id="cenários-relaciodados-à-feature-code-review-do-github">Cenários relaciodados à feature <em><strong>Code Review</strong></em> do Github</h2>
+<h3 id="c1---abrir-um-pull-request">C1 - Abrir um pull-request</h3>
+<p>| <strong>Titulo</strong>  | Abrir um pull-request |
+| ————- | ————- |
+| <strong>Objetivo</strong> | Disponibilizar alterações realizadas para visualização de outros desenvolvedores e/ou gerentes |
+| <strong>Contexto</strong> | Após FINALIZAR alterações e realizar os PUSHs |
+| <strong>Atores</strong> | Contribuidor |
+| <strong>Recursos</strong> | branches, commits, arquivos |
+| <strong>Episódios</strong> | Contribuidor realiza alterações no código ou implementa novo código em NOVA branch |
+| | Contribuidor realiza commit das alterações feitas |
+| | Contribuidor realiza push dos commits feitos na nova branch |
+| | Contribuidor abre pull-request para avaliação do código contido na branch |
+| <strong>Restrição</strong> | Código ter sido desenvolvido em uma branch separada da branch principal |</p>
+
+<h3 id="c2---aceitar-um-pull-request">C2 - Aceitar um pull-request</h3>
+<p>| <strong>Titulo</strong>  | Aceitar um pull-request |
+| ————- | ————- |
+| <strong>Objetivo</strong> | Realizar merge das alterações realizadas numa branch à branch principal |
+| <strong>Contexto</strong> | Após um pull-request ter sido ABERTO |
+| <strong>Atores</strong> | Colaborador |
+| <strong>Recursos</strong> | branches, commits, arquivos, pull-request aberto |
+| <strong>Episódios</strong> | Contribuidor e Colaborador DISCUTEM o código contido no pull-request aberto |
+| | Contribuidor e Colaborador e/ou gerentes certificam-se de que o código está CORRETO |
+| | Colaborador aceita o pull-request aberto |
+| <strong>Restrição</strong> | Haver um pull-request aberto |
+| | O código contido no pull-request aberto estar correto |
+| <strong>Exceção</strong> | O código contido no pull-request aberto NÃO estar correto |</p>
+
+<h3 id="c3---fechar-um-pull-request">C3 - Fechar um pull-request</h3>
+<p>| <strong>Titulo</strong>  | Fechar um pull-request |
+| ————- | ————- |
+| <strong>Objetivo</strong> | Fechar um pull-request aberto SEM REALIZAR MERGE das alteração realizadas à branch principal |
+| <strong>Contexto</strong> | Quando código não é necessário |
+| <strong>Atores</strong> | Colaborador |
+| <strong>Recursos</strong> | branches, commits, arquivos, pull-request aberto |
+| <strong>Episódios</strong> | Colaborador percebe que o código não é necessário ou que outra solução foi implementada em uma branch diferente |
+| | Colaborador ou gerente fecha pull-request aberto |
+| <strong>Restrição</strong> | Haver um pull-request aberto |
+| <strong>Exceção</strong> | Pull-request aberto ser aceito |</p>
+
+<h3 id="c4---utilizar-o-diff-no-pull-request-aberto">C4 - Utilizar o diff no pull-request aberto</h3>
+<p>| <strong>Titulo</strong>  | Utilizar o diff no pull-request aberto |
+| ————- | ————- |
+| <strong>Objetivo</strong> | Visualizar alterações realizadas no código contido no pull-request aberto  |
+| <strong>Contexto</strong> | ANTES de aceitar ou fechar pull-request aberto |
+| <strong>Atores</strong> | Colaborador  |
+| <strong>Recursos</strong> | branches, commits, arquivos, pull-request aberto, código |
+| <strong>Episódios</strong> | Colaborador verifica que há um pull-request aberto  |
+| | Colaborador desejam visualiza as alterações realizadas pelo código contido no pull-request aberto em comparação à branch principal |
+| | Colaborador clica no link “Files changed” na página do pull-request aberto |
+| | Colaborador visualiza as linhas de código que foram alteradas, adicionadas ou excluídas ao código da branch principal |
+| <strong>Restrição</strong> | Haver um pull-request aberto |</p>
+
+<h3 id="c5---discutir-o-código-do-pull-request-aberto">C5 - Discutir o código do pull-request aberto</h3>
+<p>| <strong>Titulo</strong>  | Discutir o código do pull-request aberto |
+| ————- | ————- |
+| <strong>Objetivo</strong> | Certificar-se de que o código contido no pull-request aberto está correto |
+| <strong>Contexto</strong> | ANTES de aceitar ou fechar pull-request aberto |
+| <strong>Atores</strong> | Colaborador |
+| <strong>Recursos</strong> | branches, commits, arquivos, pull-request aberto, código |
+| <strong>Episódios</strong> | Colaborador verificam que há um pull-request aberto  |
+| | Colaborador visualizam as alterações realizadas pelo código contido no pull-request aberto em comparação à branch principal |
+| | Colaborador clicam no link “Files changed” na página do pull-request aberto |
+| | Colaborador visualizam as linhas de código que foram alteradas, adicionadas ou excluídas ao código da branch principal |
+| | Colaborador clicam no link para comentar a linha do código, todo o código ou requerir uma revisão |
+| <strong>Restrição</strong> | Haver um pull-request aberto |</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Titulo</strong></th>
+      <th>Efetuar um rebase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Objetivo</strong></td>
+      <td>Atualizar a branch corrente com uma nova versão da mesma ou de outra branch</td>
+    </tr>
+    <tr>
+      <td><strong>Contexto</strong></td>
+      <td>ANTES/DEPOIS de efetuar um push/commit</td>
+    </tr>
+    <tr>
+      <td><strong>Atores</strong></td>
+      <td>Desenvolvedores</td>
+    </tr>
+    <tr>
+      <td><strong>Recursos</strong></td>
+      <td>branches, commits</td>
+    </tr>
+    <tr>
+      <td><strong>Episódios</strong></td>
+      <td>Colaborador realiza um commit e/ou deseja realizar um push</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Colaborador verifica que houve ou não mudanças</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Colaborador realiza o rebase para atualizar sua branch com a branch de destino</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Titulo</strong></th>
+      <th>Requerir review</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Objetivo</strong></td>
+      <td>Solicitar review de seu código no pull-request</td>
+    </tr>
+    <tr>
+      <td><strong>Contexto</strong></td>
+      <td>APÓS abrir um pull-request</td>
+    </tr>
+    <tr>
+      <td><strong>Atores</strong></td>
+      <td>Contribuidor</td>
+    </tr>
+    <tr>
+      <td><strong>Recursos</strong></td>
+      <td>branches, commits, pull-request aberto, código, arquivos</td>
+    </tr>
+    <tr>
+      <td><strong>Episódios</strong></td>
+      <td>Contribuidor abre um pull-request</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Contribuidor  navega até a pagina do pull-request</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Contribuidor ou Gerente clica no link <em><strong>Reviewers</strong></em></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Contribuidor ou Gerente digita ou clica no nome da pessoa a quem a quem será solicitada a revisão do código</td>
+    </tr>
+    <tr>
+      <td><strong>Restrição</strong></td>
+      <td>Haver um pull-request aberto</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>A pessoa a quem será solicitada a revisão do código do pull-request aberto deve estar incluída no repositório do projeto</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Titulo</strong></th>
+      <th>Utilizar blame view</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Objetivo</strong></td>
+      <td>Ver como estava um arquivo antes de uma mudança em particular</td>
+    </tr>
+    <tr>
+      <td><strong>Contexto</strong></td>
+      <td>Código está hospedado no GitHub e foi feito uma alteração</td>
+    </tr>
+    <tr>
+      <td><strong>Atores</strong></td>
+      <td>Colaborador</td>
+    </tr>
+    <tr>
+      <td><strong>Recursos</strong></td>
+      <td>Commits</td>
+    </tr>
+    <tr>
+      <td><strong>Episódios</strong></td>
+      <td>Colaborador navega para a página principal do <em>repsitório</em></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Colaborador clica no arquivo que se quer checar história de mudanças</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Colaborador clicam em <em>Blame</em> para abrir o <em>blame view</em></td>
+    </tr>
+    <tr>
+      <td><strong>Restrição</strong></td>
+      <td>Ser o primeiro <em>commit</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Titulo</strong></th>
+      <th>Resolver um conflito de <em>merge</em> no GitHub</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Objetivo</strong></td>
+      <td><em>Merjar</em> pull requests resolvendo simples conflitos no GitHub</td>
+    </tr>
+    <tr>
+      <td><strong>Contexto</strong></td>
+      <td>Foi aberto um Pull Request e o GitHub alertou que há conflitos</td>
+    </tr>
+    <tr>
+      <td><strong>Atores</strong></td>
+      <td>Desenvolvedores</td>
+    </tr>
+    <tr>
+      <td><strong>Recursos</strong></td>
+      <td>Commits, branchs, pull-request aberto</td>
+    </tr>
+    <tr>
+      <td><strong>Episódios</strong></td>
+      <td>Desenvolvedor navega para a página principal do <em>repsitório</em></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Desenvolvedor clica em Pull requests</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Desenvolvedor clica na lista dos Pull requests naquele que estiver com um “x em vermelho”</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Desenvolvedor clica no botão “Resolve conflicts”</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Desenvolvedor decide o que fica e o que irá sair do código em conflito</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Desenvolvedor clica em “Mark as resolved”</td>
+    </tr>
+    <tr>
+      <td><strong>Restrição</strong></td>
+      <td>Haver conflitos, Haver Pull Requests abertos</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      
+    </div>
+    <script src="/assets/javascript/anchor-js/anchor.min.js"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

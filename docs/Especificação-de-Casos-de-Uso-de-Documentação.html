@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>docs.wiki</title>
+<meta property="og:title" content="docs.wiki" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso-de-Documenta%C3%A7%C3%A3o.html" />
+<meta property="og:url" content="http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso-de-Documenta%C3%A7%C3%A3o.html" />
+<meta property="og:site_name" content="docs.wiki" />
+<script type="application/ld+json">
+{"name":null,"description":null,"author":null,"@type":"WebPage","url":"http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso-de-Documenta%C3%A7%C3%A3o.html","publisher":null,"image":null,"headline":"docs.wiki","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link href="/assets/css/style.css?v=921509ba12e98a4597ecb0ae1e5123d6767aea0a" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+        <h1><a href="http://localhost:4000/">docs.wiki</a></h1>
+      
+
+      <p>Autor: Kairon Velozo</p>
+
+<hr />
+
+<h2 id="1-introdução">1. Introdução</h2>
+
+<p>Este artefato apresenta as especificações dos casos de uso para a área de documentação nos repositórios no GitHub (wiki).</p>
+
+<p>A wiki é uma das funcionalidades apresentadas pelo GitHub para o gerenciamento de documentação de projetos. Possui uma série de opções que permitem que os usuários do GitHub possam elaborar e gerenciar a documentação de seus projetos de maneira simples e prática, com ferramentas disponíveis diretamente na plataforma.</p>
+
+<p>Ações desempenhadas por um ator em específico o nome do ator é explicitado. Ações as quais podem ser realizadas por mais de um ator, adota-se a referência “ator” para fins de generalização.</p>
+
+<h2 id="2-identificação-dos-atores">2. Identificação dos atores</h2>
+<p>| Ator   |      Nome do Ator      |  Descrição Ator |
+|——–|:———————-:|:—————-:|
+| Ator 01 |  Colaborador | Uma pessoa que está envolvida que esta na sua organização e que possa ler, escrever ou permissões de administrador para um ou mais repositórios na sua organização.  |
+| Ator 02 |  Visitante | Qualquer pessoa com acesso à funcionalidade.  |</p>
+
+<h2 id="3-diagrama-de-casos-de-uso">3. Diagrama de Casos de Uso</h2>
+<p><img src="/images/uc/documentation.png" alt="images/uc/documentation.png" />
+<br /><a target="_blank" href="images/uc/documentation.png"> Diagrama de Caso de Uso </a><br /></p>
+
+<h2 id="4-espeficicação-dos-casos-de-uso">4. Espeficicação dos Casos de Uso</h2>
+
+<h3 id="uc-01-criar-página-na-wiki">UC-01 Criar Página na Wiki</h3>
+
+<p><strong>Descrição</strong>:<br />
+Permitir a criação de páginas na wiki.</p>
+
+<p><strong>Atores</strong><br />
+Colaborador</p>
+
+<p><strong>Pré-Condições</strong></p>
+<ol>
+  <li>Colaborador deve estar logado em sua conta</li>
+  <li>A wiki do repositório deve estar habilitada.</li>
+</ol>
+
+<p><strong>Fluxo Principal</strong></p>
+<ol>
+  <li>O colaborador entra no repositório do projeto e clica em “Wiki”</li>
+  <li>O colaborador clica em “New Page”</li>
+  <li>O colaborador preenche as informações da página:
+    <ul>
+      <li>Título;</li>
+      <li>Conteúdo da Página.</li>
+    </ul>
+  </li>
+  <li>O colaborador preenche, opcionalmente, o campo “Edit Message” para descrever o commit.</li>
+  <li>O colaborador clica em “Save Page”. <strong>(FE.1)</strong></li>
+  <li>O colaborador é redirecionado para a página criada.</li>
+</ol>
+
+<p><strong>Fluxo Exceção</strong></p>
+<ol>
+  <li>No <strong>passo 4</strong> do <strong>Fluxo Principal</strong> o sistema não permitirá salvar página caso o título da página já esteja em uso por outra página. O caso de uso retorna ao <strong>passo 3</strong> do <strong>Fluxo Principal</strong>.</li>
+</ol>
+
+<h3 id="uc-02-editar-página-da-wiki">UC-02 Editar Página da Wiki</h3>
+
+<p><strong>Descrição</strong><br />
+Permitir a edição de informações de uma página da wiki.</p>
+
+<p><strong>Atores</strong><br />
+Colaborador</p>
+
+<p><strong>Pré-Condições</strong></p>
+<ol>
+  <li>Colaborador deve estar logado em sua conta.</li>
+  <li>A wiki do repositório deve estar habilitada.</li>
+  <li>A editada a ser apagada deve existir.</li>
+</ol>
+
+<p><strong>Fluxo Principal</strong></p>
+<ol>
+  <li>O colaborador entra no repositório do projeto e clica em “Wiki”.</li>
+  <li>O colaborador entra na página que deseja editar e clica em “Edit Page”.  <strong>(FA.1)</strong></li>
+  <li>O colaborador realiza as alterações desejadas na página:
+    <ul>
+      <li>Título;</li>
+      <li>Conteúdo da Página.</li>
+    </ul>
+  </li>
+  <li>O colaborador preenche, opcionalmente, o campo “Edit Message” para descrever as alterações realizadas (<em>commit</em>).</li>
+  <li>O colaborador clica em “Save Page”. <strong>(FE.01)</strong></li>
+  <li>O colaborador é redirecionado paga a página editada.</li>
+</ol>
+
+<p><strong>Fluxo Alternativo</strong></p>
+<ol>
+  <li>A partir <strong>passo 2</strong> do <strong>Fluxo Principal</strong>, o colaborador acessa diretamente a página de edição da página desejada, através de sua url única. O caso de uso retorna ao <strong>passo 3</strong> do <strong>Fluxo Principal</strong>.</li>
+</ol>
+
+<p><strong>Fluxo Exceção</strong></p>
+<ol>
+  <li>No <strong>passo 5</strong> do <strong>Fluxo Principal</strong> o sistema não permitirá salvar página caso o título da página já esteja em uso por outra página. O caso de uso retorna ao <strong>passo 3</strong> do <strong>Fluxo Principal</strong>.</li>
+</ol>
+
+<h3 id="uc-03-apagar-página-da-wiki">UC-03 Apagar Página da Wiki</h3>
+
+<p><strong>Descrição</strong><br />
+Permitir a exclusão de páginas da Wiki.</p>
+
+<p><strong>Atores</strong><br />
+Colaborador</p>
+
+<p><strong>Pré-Condições</strong></p>
+<ol>
+  <li>Colaborador deve estar logado em sua conta.</li>
+  <li>A wiki do repositório deve estar habilitada.</li>
+  <li>A página a ser apagada deve existir.</li>
+</ol>
+
+<p><strong>Fluxo Principal</strong>:</p>
+<ol>
+  <li>O colaborador entra no repositório do projeto e clica em “Wiki”.</li>
+  <li>O colaborador entra na página que deseja apagar e clica em “Edit Page”. <strong>(FA.1)</strong></li>
+  <li>O colaborador clica em “Delete Page”.</li>
+  <li>O sistema apresenta uma mensagem solicitando a confirmação e o colaborador clica em “Ok”.</li>
+  <li>A página é apagada e o colaborador é redirecionado para página principal da wiki. <strong>(FE.1)</strong></li>
+</ol>
+
+<p><strong>Fluxo Alternativo:</strong></p>
+<ol>
+  <li>A partir <strong>passo 2</strong> do <strong>Fluxo Principal</strong>, o colaborador acessa diretamente a página de edição da página desejada. O caso de uso retorna ao <strong>passo 3</strong> do <strong>Fluxo Principal</strong>.</li>
+</ol>
+
+<p><strong>Fluxo Exceção:</strong></p>
+<ol>
+  <li>No <strong>passo 5</strong> do <strong>Fluxo Principal</strong> o sistema não poderá apagar uma página se ela já foi apagada anteriormente, porém ainda apresentava a opção de apagá-la. O colaborador será redirecionado para a página de erro 404.</li>
+</ol>
+
+<h3 id="uc04---ver-histórico-de-alterações-da-página">UC04 - Ver Histórico de Alterações da Página</h3>
+
+<p><strong>Atores</strong>:</p>
+<ul>
+  <li>Colaborador</li>
+  <li>Visitante</li>
+</ul>
+
+<p><strong>Pré-Condições</strong>:</p>
+<ol>
+  <li>A wiki do repositório deve estar habilitada.</li>
+  <li>A página a qual se deseja ver o histórico de alterações deve existir.</li>
+</ol>
+
+<p><strong>Fluxo Principal</strong>:</p>
+<ol>
+  <li>O ator entra no repositório do projeto e clica em “Wiki”.</li>
+  <li>O ator entra na página que deseja apagar e clica em “Edit Page”. <strong>(FA.1)</strong></li>
+  <li>O ator clica em “Page History”.</li>
+  <li>O ator visualiza em formato de tabela as alterações realizadas com as seguintes informações:
+    <ul>
+      <li>autor da alteração;</li>
+      <li>mensagem de alteração;</li>
+      <li>data da alteração;</li>
+      <li>código identificador do <em>commit</em> da alteração.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Fluxo Alternativo:</strong></p>
+<ol>
+  <li>A partir <strong>passo 2</strong> do <strong>Fluxo Principal</strong>, o colaborador acessa diretamente a página de edição da página desejada, através de sua url única. O caso de uso retorna ao <strong>passo 3</strong> do <strong>Fluxo Principal</strong>.</li>
+</ol>
+
+<h3 id="uc-05-comparar-da-versões-da-página">UC-05 Comparar da Versões da Página</h3>
+
+<p><strong>Descrição</strong> <br />
+Permitir a visualização das alterações presentes em duas ou mais versões de uma página da wiki.</p>
+
+<p><strong>Atores</strong></p>
+<ul>
+  <li>Colaborador</li>
+  <li>Visitante</li>
+</ul>
+
+<p><strong>Pré-Condições</strong></p>
+<ol>
+  <li>A wiki do repositório deve estar habilitada.</li>
+  <li>A página a qual se deseja realizar a comparação de versões deve existir.</li>
+</ol>
+
+<p><strong>Fluxo Principal</strong></p>
+<ol>
+  <li>O ator entra no repositório do projeto e clica em “Wiki”.</li>
+  <li>O ator entra na página que deseja apagar e clica em “Edit Page”. <strong>(FA.1)</strong></li>
+  <li>O ator clica em “Page History”.</li>
+  <li>O ator visualiza em formato de tabela as versões disponíveis da página. <strong>(FA.2)</strong></li>
+  <li>O ator escolhe, através de <em>checkbox</em>, as versões as quais deseja comparar e clica em “Compare Revisions”.</li>
+  <li>O ator visualiza as diferenças entre as versões.</li>
+</ol>
+
+<p><strong>Fluxo Alternativo</strong></p>
+<ol>
+  <li>A partir do <strong>passo 2</strong> do <strong>Fluxo Principal</strong>, o ator acessa diretamente a página de edição da página desejada, através de sua url única. O caso de uso retorna ao <strong>passo 3</strong> do <strong>Fluxo Principal</strong>.</li>
+  <li>A partir do <strong>passo 4</strong> do <strong>Fluxo Principal</strong>, o ator acessa diretamente a página de versões da página, através de sua url única. O caso de uso retorna ao <strong>passo 5</strong> do <strong>Fluxo Principal</strong>.</li>
+</ol>
+
+<h3 id="uc-06-visualizar-página">UC-06 Visualizar Página</h3>
+
+<p><strong>Descrição</strong> <br />
+Permitir a visualização de uma página da wiki.</p>
+
+<p><strong>Atores</strong></p>
+<ul>
+  <li>Colaborador</li>
+  <li>Visitante</li>
+</ul>
+
+<p><strong>Pré-Condições</strong></p>
+<ol>
+  <li>A wiki do repositório deve estar habilitada.</li>
+  <li>A página a qual se deseja visualizar deve existir.</li>
+</ol>
+
+<p><strong>Fluxo Principal</strong></p>
+<ol>
+  <li>O ator entra no repositório do projeto e clica em “Wiki”. <strong>(FA.1)</strong></li>
+  <li>O ator entra na página que deseja e a página é apresentada.</li>
+</ol>
+
+<p><strong>Fluxo Alternativo</strong></p>
+<ol>
+  <li>A partir do <strong>passo 2</strong> do <strong>Fluxo Principal</strong>, o ator acessa diretamente a página desejada, através de sua url única. O caso de uso retorna ao <strong>passo 2</strong> do <strong>Fluxo Principal</strong>.</li>
+</ol>
+
+
+      
+    </div>
+    <script src="/assets/javascript/anchor-js/anchor.min.js"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

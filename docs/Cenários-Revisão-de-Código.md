@@ -4,12 +4,12 @@
 | ------------- | ------------- |
 | **Objetivo** | Disponibilizar alterações realizadas para visualização de outros desenvolvedores e/ou gerentes |
 | **Contexto** | Após FINALIZAR alterações e realizar os PUSHs |
-| **Atores** | Desenvolvedores e Gerentes de Projeto |
+| **Atores** | Contribuidor |
 | **Recursos** | branches, commits, arquivos |
-| **Episódios** | Desenvolvedor realiza alterações no código ou implementa novo código em NOVA branch |
-| | Desenvolvedor realiza commit das alterações feitas |
-| | Desenvolvedor realiza push dos commits feitos na nova branch |
-| | Desenvolvedor abre pull-request para avaliação do código contido na branch |
+| **Episódios** | Contribuidor realiza alterações no código ou implementa novo código em NOVA branch |
+| | Contribuidor realiza commit das alterações feitas |
+| | Contribuidor realiza push dos commits feitos na nova branch |
+| | Contribuidor abre pull-request para avaliação do código contido na branch |
 | **Restrição** | Código ter sido desenvolvido em uma branch separada da branch principal |
 
 ### C2 - Aceitar um pull-request
@@ -17,11 +17,11 @@
 | ------------- | ------------- |
 | **Objetivo** | Realizar merge das alterações realizadas numa branch à branch principal |
 | **Contexto** | Após um pull-request ter sido ABERTO |
-| **Atores** | Desenvolvedores e Gerentes de Projeto |
+| **Atores** | Colaborador |
 | **Recursos** | branches, commits, arquivos, pull-request aberto |
-| **Episódios** | Desenvolvedores DISCUTEM o código contido no pull-request aberto |
-| | Desenvolvedores e/ou gerentes certificam-se de que o código está CORRETO |
-| | Desenvolvedor e/ou gerente aceita o pull-request aberto |
+| **Episódios** | Contribuidor e Colaborador DISCUTEM o código contido no pull-request aberto |
+| | Contribuidor e Colaborador e/ou gerentes certificam-se de que o código está CORRETO |
+| | Colaborador aceita o pull-request aberto |
 | **Restrição** | Haver um pull-request aberto |
 | | O código contido no pull-request aberto estar correto |
 | **Exceção** | O código contido no pull-request aberto NÃO estar correto |
@@ -31,10 +31,10 @@
 | ------------- | ------------- |
 | **Objetivo** | Fechar um pull-request aberto SEM REALIZAR MERGE das alteração realizadas à branch principal |
 | **Contexto** | Quando código não é necessário |
-| **Atores** | Desenvolvedores e Gerentes de Projeto |
+| **Atores** | Colaborador |
 | **Recursos** | branches, commits, arquivos, pull-request aberto |
-| **Episódios** | Desenvolvedor ou gerente percebe que o código não é necessário ou que outra solução foi implementada em uma branch diferente |
-| | Desenvolvedor ou gerente fecha pull-request aberto |
+| **Episódios** | Colaborador percebe que o código não é necessário ou que outra solução foi implementada em uma branch diferente |
+| | Colaborador ou gerente fecha pull-request aberto |
 | **Restrição** | Haver um pull-request aberto |
 | **Exceção** | Pull-request aberto ser aceito |
 
@@ -43,12 +43,12 @@
 | ------------- | ------------- |
 | **Objetivo** | Visualizar alterações realizadas no código contido no pull-request aberto  |
 | **Contexto** | ANTES de aceitar ou fechar pull-request aberto |
-| **Atores** | Desenvolvedores e Gerentes de Projeto |
+| **Atores** | Colaborador  |
 | **Recursos** | branches, commits, arquivos, pull-request aberto, código |
-| **Episódios** | Desenvolvedores e/ou gerentes verificam que há um pull-request aberto  |
-| | Desenvolvedores e/ou gerentes desejam visualizar as alterações realizadas pelo código contido no pull-request aberto em comparação à branch principal |
-| | Desenvolvedores e/ou gerentes clicam no link "Files changed" na página do pull-request aberto |
-| | Desenvolvedores e/ou gerentes visualizam as linhas de código que foram alteradas, adicionadas ou excluídas ao código da branch principal |
+| **Episódios** | Colaborador verifica que há um pull-request aberto  |
+| | Colaborador desejam visualiza as alterações realizadas pelo código contido no pull-request aberto em comparação à branch principal |
+| | Colaborador clica no link "Files changed" na página do pull-request aberto |
+| | Colaborador visualiza as linhas de código que foram alteradas, adicionadas ou excluídas ao código da branch principal |
 | **Restrição** | Haver um pull-request aberto |
 
 ### C5 - Discutir o código do pull-request aberto
@@ -56,13 +56,13 @@
 | ------------- | ------------- |
 | **Objetivo** | Certificar-se de que o código contido no pull-request aberto está correto |
 | **Contexto** | ANTES de aceitar ou fechar pull-request aberto |
-| **Atores** | Desenvolvedores e Gerentes de Projeto |
+| **Atores** | Colaborador |
 | **Recursos** | branches, commits, arquivos, pull-request aberto, código |
-| **Episódios** | Desenvolvedores e/ou gerentes verificam que há um pull-request aberto  |
-| | Desenvolvedores e/ou gerentes visualizam as alterações realizadas pelo código contido no pull-request aberto em comparação à branch principal |
-| | Desenvolvedores e/ou gerentes clicam no link "Files changed" na página do pull-request aberto |
-| | Desenvolvedores e/ou gerentes visualizam as linhas de código que foram alteradas, adicionadas ou excluídas ao código da branch principal |
-| | Desenvolvedores e/ou gerentes clicam no link para comentar a linha do código, todo o código ou requerir uma revisão |
+| **Episódios** | Colaborador verificam que há um pull-request aberto  |
+| | Colaborador visualizam as alterações realizadas pelo código contido no pull-request aberto em comparação à branch principal |
+| | Colaborador clicam no link "Files changed" na página do pull-request aberto |
+| | Colaborador visualizam as linhas de código que foram alteradas, adicionadas ou excluídas ao código da branch principal |
+| | Colaborador clicam no link para comentar a linha do código, todo o código ou requerir uma revisão |
 | **Restrição** | Haver um pull-request aberto |
 
 | **Titulo**  | Efetuar um rebase |
@@ -71,20 +71,20 @@
 | **Contexto** | ANTES/DEPOIS de efetuar um push/commit |
 | **Atores** | Desenvolvedores |
 | **Recursos** | branches, commits |
-| **Episódios** | Desenvolvedor realiza um commit e/ou deseja realizar um push |
-| | Desenvolvedor verifica que houve ou não mudanças |
-| | Desenvolvedor realiza o rebase para atualizar sua branch com a branch de destino |
+| **Episódios** | Colaborador realiza um commit e/ou deseja realizar um push |
+| | Colaborador verifica que houve ou não mudanças |
+| | Colaborador realiza o rebase para atualizar sua branch com a branch de destino |
 
 | **Titulo**  | Requerir review |
 | ------------- | ------------- |
 | **Objetivo** | Solicitar review de seu código no pull-request |
 | **Contexto** | APÓS abrir um pull-request |
-| **Atores** | Desenvolvedores e Gerentes de Projeto |
+| **Atores** | Contribuidor |
 | **Recursos** | branches, commits, pull-request aberto, código, arquivos |
-| **Episódios** | Desenvolvedor abre um pull-request |
-| | Desenvolvedor ou Gerente de projeto navega até a pagina do pull-request |
-| | Desenvolvedor ou Gerente clica no link _**Reviewers**_ |
-| | Desenvolvedor ou Gerente digita ou clica no nome da pessoa a quem a quem será solicitada a revisão do código |
+| **Episódios** | Contribuidor abre um pull-request |
+| | Contribuidor  navega até a pagina do pull-request |
+| | Contribuidor ou Gerente clica no link _**Reviewers**_ |
+| | Contribuidor ou Gerente digita ou clica no nome da pessoa a quem a quem será solicitada a revisão do código |
 | **Restrição** | Haver um pull-request aberto |
 | | A pessoa a quem será solicitada a revisão do código do pull-request aberto deve estar incluída no repositório do projeto |
 
@@ -94,11 +94,11 @@
 | ------------- | ------------- |
 | **Objetivo** | Ver como estava um arquivo antes de uma mudança em particular   |
 | **Contexto** | Código está hospedado no GitHub e foi feito uma alteração |
-| **Atores** | Desenvolvedor |
+| **Atores** | Colaborador |
 | **Recursos** | Commits |
-| **Episódios** | Desenvolvedor navega para a página principal do _repsitório_  |
-| | Desenvolvedor clica no arquivo que se quer checar história de mudanças  |
-| | Desenvolvedores clicam em _Blame_ para abrir o _blame view_ |
+| **Episódios** | Colaborador navega para a página principal do _repsitório_  |
+| | Colaborador clica no arquivo que se quer checar história de mudanças  |
+| | Colaborador clicam em _Blame_ para abrir o _blame view_ |
 | **Restrição** | Ser o primeiro _commit_ |
 
 | **Titulo**  | Resolver um conflito de _merge_ no GitHub |

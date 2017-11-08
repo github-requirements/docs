@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>DOCUMENTO DE CASOS DE USOS | docs.wiki</title>
+<meta property="og:title" content="DOCUMENTO DE CASOS DE USOS" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso-Gerenciamento-de-Comunidade.html" />
+<meta property="og:url" content="http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso-Gerenciamento-de-Comunidade.html" />
+<meta property="og:site_name" content="docs.wiki" />
+<script type="application/ld+json">
+{"name":null,"description":null,"author":null,"@type":"WebPage","url":"http://localhost:4000/Especifica%C3%A7%C3%A3o-de-Casos-de-Uso-Gerenciamento-de-Comunidade.html","publisher":null,"image":null,"headline":"DOCUMENTO DE CASOS DE USOS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link href="/assets/css/style.css?v=921509ba12e98a4597ecb0ae1e5123d6767aea0a" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+        <h1><a href="http://localhost:4000/">docs.wiki</a></h1>
+      
+
+      <h1 id="documento-de-casos-de-usos">DOCUMENTO DE CASOS DE USOS</h1>
+<h2 id="tema-gerenciamento-de-comunidade--grupo-github">Tema: Gerenciamento de Comunidade | Grupo: GitHub</h2>
+<h3 id="aluno-responsável-weyler-almeida-gomes">Aluno responsável: Weyler Almeida Gomes</h3>
+
+<h2 id="1-introdução">1. Introdução</h2>
+<p>Através de uma análise profunda da equipe, foi decidido “dividir” o GitHub em funcionalidades principais (onde o próprio GitHub define essas funcionalidades principais) e cada integrante(es) da equipe ficou responsável em elaborar o Diagrama de Casos de Uso e a Especificação de Casos de Uso. Logo a funcionalidade Gerenciamento de Comunidade ficou de responsabilidade do aluno Weyler Almeida.</p>
+
+<h2 id="2-identificação-dos-atores">2. Identificação dos atores</h2>
+<p>| Ator   |      Nome do Ator      |  Descrição Ator |
+|——–|:———————-:|:—————-:|
+| Ator 01 | Usuário | Pessoa comum que tenha acesso ao site. |
+| Ator 02 |  Colaborador | Uma pessoa que está envolvida em uma organização e que possa ler, escrever ou possuir permissões de administrador para um ou mais repositórios na sua organização.  |
+| Ator 03 | Membro | Usuário que possui permissões reduzidas com relação ao colaborador de uma organização. Sendo membro uma especialização de Colaborador. |
+| Ator 04 | Sistema | O próprio GitHub em si. |</p>
+
+<h2 id="3-identificação-dos-casos-de-uso">3. Identificação dos Casos de Uso</h2>
+<p>| #UC   |      Nome UC      |
+|——–|:———————-:|
+| UC-01 |  Criar organização |
+| UC-02 |  Convidar membros para a organização |
+| UC-03 |  Remover membros da organização  |
+| UC-04 |  Mudar permissão de membros  |
+| UC-05 |  Criar time |
+| UC-06 |  Renomear time |
+| UC-07 |  Remover time |
+| UC-08 |  Mudar visibilidade do time |</p>
+
+<h2 id="5-diagrama-de-caso-de-uso">5. Diagrama de Caso de Uso</h2>
+
+<p><img src="https://user-images.githubusercontent.com/21064965/32178249-68ddfee6-bd73-11e7-951f-5d2ac1822aa6.png" alt="gerenciamento de comunidade" /></p>
+
+<h2 id="6-detalhamento-dos-casos-de-uso">6. Detalhamento dos Casos de Uso</h2>
+
+<h3 id="1-uc-01-criar-organização">1. UC-01 Criar Organização</h3>
+
+<h4 id="atores">Atores:</h4>
+<p>Usuário, Sistema</p>
+
+<h4 id="pré-condições">Pré-Condições:</h4>
+<ol>
+  <li>O usuário deve estar logado em sua conta.</li>
+</ol>
+
+<h4 id="fluxo-principal">Fluxo Principal:</h4>
+
+<ol>
+  <li>Usuário abre a aba de seu perfil e entra em configurações.</li>
+  <li>Usuário acessa a parte de organizações e clica em “New organization”.</li>
+  <li>Usuário adiciona o nome e o e-mail da organização. – FE1 e FE2</li>
+  <li>Usuário escolhe o plano de pagamento. – FA2</li>
+  <li>Usuário escolhe se a organização pertence a uma empresa. – FA3</li>
+  <li>Sistema habilita o botão de confirmação.</li>
+  <li>Usuário confirma a criação da organização.</li>
+  <li>Sistema leva o usuário até a página principal de sua organização.</li>
+  <li>Usuário torna-se colaborador da organização.</li>
+</ol>
+
+<h4 id="fluxo-alternativo">Fluxo Alternativo:</h4>
+
+<h5 id="fa01---acesso-alternativo-à-página-de-criação-da-organização">[FA01] - Acesso alternativo à página de criação da organização</h5>
+
+<ol>
+  <li>Usuário acessa a barra de rolagem com o seu nome na página principal de seu perfil.</li>
+  <li>Usuário clica em “Create organization”.</li>
+  <li>Caso de uso retorna ao FP3.</li>
+</ol>
+
+<h5 id="fa02---planos-não-gratuitos-de-pagamento">[FA02] - Planos não gratuitos de pagamento</h5>
+
+<ol>
+  <li>Usuário escolhe entre o plano TEAM e o plano BUSINESS.</li>
+  <li>Sistema acrescenta campos de informações que o usuário deve preencher.</li>
+  <li>Usuário entra com o número de usuários máximo na organização.</li>
+  <li>Sistema adequa o valor mensal do plano com relação ao valor digitado pelo usuário.</li>
+  <li>Usuário informa os dados do cartão ou efetua o pagamento pelo serviço PayPal. – FE3</li>
+  <li>Caso de uso retorna ao FP5.</li>
+</ol>
+
+<h5 id="fa03---organização-pertence-a-uma-empresa">[FA03] - Organização pertence a uma empresa</h5>
+
+<ol>
+  <li>Usuário seleciona a opção em que a organização pertence a uma empresa.</li>
+  <li>Sistema acrescenta um campo para a inserção do nome da empresa.</li>
+  <li>Usuário insere o nome da empresa.</li>
+  <li>Caso retorna ao FP6.</li>
+</ol>
+
+<h4 id="fluxo-de-exceção">Fluxo de Exceção:</h4>
+
+<h5 id="fe01---nome-da-organização-inválido">[FE01] - Nome da organização inválido</h5>
+
+<ol>
+  <li>Usuário digita um nome já utilizado por outra organização.</li>
+  <li>Sistema notifica o usuário com uma mensagem de erro.</li>
+  <li>Sistema aguarda alteração do nome.</li>
+</ol>
+
+<h5 id="fe02---e-mail-inválido">[FE02] - E-mail inválido</h5>
+
+<ol>
+  <li>Usuário insere um e-mail inválido na página de criação da organização.</li>
+  <li>Sistema notifica o usuário com uma mensagem de erro.</li>
+  <li>Sistema aguarda alteração do e-mail.</li>
+</ol>
+
+<h5 id="fe03---erro-no-processo-de-pagamento">[FE03] - Erro no processo de pagamento</h5>
+
+<ol>
+  <li>Usuário insere informações inválidas na sessão de pagamento.</li>
+  <li>Usuário confirma a criação da organização.</li>
+  <li>Sistema retorna à página de criação.</li>
+  <li>Sistema notifica o usuário com uma mensagem de erro.</li>
+</ol>
+
+<h4 id="pós-condições">Pós-condições:</h4>
+<h5 id="organização-criada">Organização criada:</h5>
+<p>A organização é criada e passa a ser listada na página de organizações do perfil do usuário. O usuário pode adicionar/remover membros, mudar permissões de membros, criar times, etc.</p>
+
+<h3 id="uc-02-convidar-membros-da-organização">UC-02 Convidar membros da organização</h3>
+
+<h4 id="atores-1">Atores:</h4>
+<p>Colaborador, Sistema.</p>
+
+<h4 id="pré-condições-1">Pré-condições:</h4>
+<p align="justify">
+O colaborador deve estar logado em sua conta.
+</p>
+
+<h4 id="fluxo-principal-1">Fluxo Principal:</h4>
+
+<ol>
+  <li>Colaborador clica em sua foto de perfil e em “Your Profile”.</li>
+  <li>Colaborador seleciona usa organização.</li>
+  <li>Colaborador seleciona a aba “People” e clica em “Invite member”.</li>
+  <li>Colaborador insere o nome ou o e-mail da pessoa que se quer convidar. – FE1</li>
+  <li>Colaborador escolhe os privilégios da pessoa na organização.</li>
+  <li>Colaborador confirma o envio do convite.</li>
+</ol>
+
+<h4 id="fluxos-alternativos">Fluxos Alternativos</h4>
+
+<h5 id="não-se-aplica">Não se aplica</h5>
+
+<h4 id="fluxo-de-exceção-1">Fluxo de Exceção</h4>
+
+<h5 id="fe01---usuário-não-encontrado">[FE01] - Usuário não encontrado</h5>
+
+<ol>
+  <li>Colaborador insere o nome/e-mail de usuário não cadastrado no sistema.</li>
+  <li>Sistema notifica o usuário com uma mensagem de aviso.</li>
+  <li>Sistema aguarda a alteração.</li>
+</ol>
+
+<h4 id="pós-condições-1">Pós-condições:</h4>
+<h5 id="convite-enviado">Convite enviado:</h5>
+<p>Após a finalização do caso de uso, um e-mail é enviado para o usuário que está sendo convidado.</p>
+
+<h3 id="uc-03-remover-membros-da-organização">UC-03 Remover membros da organização</h3>
+
+<h4 id="atores-2">Atores:</h4>
+<p>Colaborador.</p>
+
+<h4 id="pré-condições-2">Pré-condições:</h4>
+<p align="justify">
+O colaborador deve estar logado em sua conta.
+</p>
+
+<h4 id="fluxo-principal-2">Fluxo Principal:</h4>
+
+<ol>
+  <li>Colaborador clica em sua foto de perfil e em “Your Profile”.</li>
+  <li>Colaborador seleciona sua organização.</li>
+  <li>Colaborador seleciona a aba “People”.</li>
+  <li>Colaborador seleciona os membros no qual deseja remover.</li>
+  <li>Colaborador seleciona “Remove from organization” no menu de rolagem em cima da lista de usuários.</li>
+  <li>Colaborador confirma a remoção.</li>
+</ol>
+
+<h4 id="fluxos-alternativos-1">Fluxos Alternativos</h4>
+
+<h5 id="não-se-aplica-1">Não se aplica</h5>
+
+<h4 id="fluxo-de-exceção-2">Fluxo de Exceção</h4>
+
+<h5 id="não-se-aplica-2">Não se aplica</h5>
+
+<h4 id="pós-condições-2">Pós-condições:</h4>
+
+<h5 id="membro-removido">Membro removido:</h5>
+<p>Após a finalização do caso de uso, o(s) membros selecionado(s) é(são) removido(s) da organização.</p>
+
+<h3 id="uc-04-mudar-permissão-de-membros">UC-04 Mudar permissão de membros</h3>
+
+<h4 id="atores-3">Atores:</h4>
+<p>Colaborador.</p>
+
+<h4 id="pré-condições-3">Pré-condições:</h4>
+<p align="justify">
+O colaborador deve estar logado em sua conta.
+</p>
+
+<h4 id="fluxo-principal-3">Fluxo Principal:</h4>
+
+<ol>
+  <li>Colaborador clica em sua foto de perfil e em “Your Profile”.</li>
+  <li>Colaborador seleciona sua organização.</li>
+  <li>Colaborador seleciona a aba “People”.</li>
+  <li>Colaborador seleciona um ou mais membros para promover.</li>
+  <li>Colaborador clica em “Change role” no menu de rolagem em cima da lista de membros.</li>
+  <li>Colaborador seleciona qual papel os membros devem exercer e confirma a alteração.</li>
+</ol>
+
+<h4 id="fluxos-alternativos-2">Fluxos Alternativos</h4>
+
+<h5 id="não-se-aplica-3">Não se aplica</h5>
+
+<h4 id="fluxo-de-exceção-3">Fluxo de Exceção</h4>
+
+<h5 id="não-se-aplica-4">Não se aplica</h5>
+
+<h4 id="pós-condições-3">Pós-condições:</h4>
+
+<h5 id="permissão-de-membro-mudada">Permissão de membro mudada:</h5>
+<p>Após a finalização do caso de uso, o(s) membros selecionado(s) é(são) promovidos\rebaixados para a permissão selecionada pelo colaborador.</p>
+
+<h3 id="uc-05-criar-time">UC-05 Criar time</h3>
+
+<h4 id="atores-4">Atores:</h4>
+<p>Membro.</p>
+
+<h4 id="pré-condições-4">Pré-condições:</h4>
+<p align="justify">
+O membro deve estar logado em sua conta.
+</p>
+
+<h4 id="fluxo-principal-4">Fluxo Principal:</h4>
+
+<ol>
+  <li>Membro clica em sua foto de perfil e em “Your profile”.</li>
+  <li>Membro seleciona sua organização.</li>
+  <li>Membro acessa a aba “Teams” e clica em “New team”.</li>
+  <li>Membro insere o nome do time, a descrição (opcional) e o time pai.</li>
+  <li>Membro escolhe a visibilidade do time.</li>
+  <li>Membro confirma a criação do time.</li>
+</ol>
+
+<h4 id="fluxos-alternativos-3">Fluxos Alternativos</h4>
+
+<h5 id="não-se-aplica-5">Não se aplica</h5>
+
+<h4 id="fluxo-de-exceção-4">Fluxo de Exceção</h4>
+
+<h5 id="não-se-aplica-6">Não se aplica</h5>
+
+<h4 id="pós-condições-4">Pós-condições:</h4>
+
+<h5 id="time-criado">Time criado:</h5>
+<p>Após a finalização do caso de uso, o time é criado tendo como “presidente” do time o membro que o criou.</p>
+
+<h3 id="uc-06-renomear-time">UC-06 Renomear time</h3>
+
+<h4 id="atores-5">Atores:</h4>
+<p>Colaborador ou membro que tenha criado o time.</p>
+
+<h4 id="pré-condições-5">Pré-condições:</h4>
+<p align="justify">
+O colaborador/membro deve estar logado em sua conta.
+</p>
+
+<h4 id="fluxo-principal-5">Fluxo Principal:</h4>
+
+<ol>
+  <li>Membro clica em sua foto de perfil e em “Your profile”.</li>
+  <li>Membro seleciona sua organização.</li>
+  <li>Membro acessa a aba “Teams” e seleciona o time que se deseja renomear.</li>
+  <li>Membro acessa a parte de configuração.</li>
+  <li>Membro altera o nome do time.</li>
+  <li>Membro confirma a alteração.</li>
+</ol>
+
+<h4 id="fluxos-alternativos-4">Fluxos Alternativos</h4>
+
+<h5 id="não-se-aplica-7">Não se aplica</h5>
+
+<h4 id="fluxo-de-exceção-5">Fluxo de Exceção</h4>
+
+<h5 id="não-se-aplica-8">Não se aplica</h5>
+
+<h4 id="pós-condições-5">Pós-condições:</h4>
+
+<h5 id="time-renomeado">Time renomeado:</h5>
+<p>Após a finalização do caso de uso, o time é renomeado.</p>
+
+<h3 id="uc-07-remover-time">UC-07 Remover time</h3>
+
+<h4 id="atores-6">Atores:</h4>
+<p>Colaborador ou membro que tenha criado o time.</p>
+
+<h4 id="pré-condições-6">Pré-condições:</h4>
+<p align="justify">
+O colaborador/membro deve estar logado em sua conta.
+</p>
+
+<h4 id="fluxo-principal-6">Fluxo Principal:</h4>
+
+<ol>
+  <li>Membro clica em sua foto de perfil e em “Your profile”.</li>
+  <li>Membro seleciona sua organização.</li>
+  <li>Membro acessa a aba “Teams” e seleciona o(s) time(s) que se deseja excluir.</li>
+  <li>Membro seleciona “Delete” no menu de rolagem acima da lista de times.</li>
+  <li>Membro confirma a exclusão do time.</li>
+</ol>
+
+<h4 id="fluxos-alternativos-5">Fluxos Alternativos</h4>
+
+<h5 id="não-se-aplica-9">Não se aplica</h5>
+
+<h4 id="fluxo-de-exceção-6">Fluxo de Exceção</h4>
+
+<h5 id="não-se-aplica-10">Não se aplica</h5>
+
+<h4 id="pós-condições-6">Pós-condições:</h4>
+
+<h5 id="time-excluído">Time excluído:</h5>
+<p>Após a finalização do caso de uso, o time é removido.</p>
+
+<h3 id="uc-08-mudar-visibilidade-do-time">UC-08 Mudar visibilidade do time</h3>
+
+<h4 id="atores-7">Atores:</h4>
+<p>Colaborador ou membro que tenha criado o time.</p>
+
+<h4 id="pré-condições-7">Pré-condições:</h4>
+<p align="justify">
+O colaborador/membro deve estar logado em sua conta.
+</p>
+
+<h4 id="fluxo-principal-7">Fluxo Principal:</h4>
+
+<ol>
+  <li>Membro clica em sua foto de perfil e em “Your profile”.</li>
+  <li>Membro seleciona sua organização.</li>
+  <li>Membro acessa a aba “Teams” e seleciona o(s) time(s) que se deseja alterar a visibilidade.</li>
+  <li>Membro seleciona “Change visibility” no menu de rolagem acima da lista de times.</li>
+  <li>Membro escolhe o time de visibilidade do time e confirma a alteração.</li>
+</ol>
+
+<h4 id="fluxos-alternativos-6">Fluxos Alternativos</h4>
+
+<h5 id="não-se-aplica-11">Não se aplica</h5>
+
+<h4 id="fluxo-de-exceção-7">Fluxo de Exceção</h4>
+
+<h5 id="não-se-aplica-12">Não se aplica</h5>
+
+<h4 id="pós-condições-7">Pós-condições:</h4>
+
+<h5 id="visibilidade-do-time-alterada">Visibilidade do time alterada:</h5>
+<p>Após a finalização do caso de uso, a visibilidade do time é alterada.</p>
+
+
+      
+    </div>
+    <script src="/assets/javascript/anchor-js/anchor.min.js"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
